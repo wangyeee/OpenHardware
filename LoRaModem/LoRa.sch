@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+LIBS:LoRaModem-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "LoRa Module and SPI Flash"
+Date "2017-06-16"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LoRaModem-cache:Ra-0x U1
+U 1 1 5941414D
+P 2900 3750
+F 0 "U1" H 2900 4250 60  0000 C CNN
+F 1 "Ra-02" H 2900 3250 60  0000 C CNN
+F 2 "LCC:RA0x-LCC16" H 2900 3750 60  0001 C CNN
+F 3 "" H 2900 3750 60  0000 C CNN
+	1    2900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaModem-cache:GND #PWR01
+U 1 1 5941419B
+P 2200 4200
+F 0 "#PWR01" H 2200 3950 50  0001 C CNN
+F 1 "GND" H 2200 4050 50  0000 C CNN
+F 2 "" H 2200 4200 50  0001 C CNN
+F 3 "" H 2200 4200 50  0001 C CNN
+	1    2200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3800 2200 3800
+Wire Wire Line
+	2200 3800 2200 3900
+Wire Wire Line
+	2300 4100 2200 4100
+Connection ~ 2200 4100
+Wire Wire Line
+	2300 4000 2200 4000
+Connection ~ 2200 4000
+Wire Wire Line
+	2300 3900 2200 3900
+Connection ~ 2200 3900
+$Comp
+L LoRaModem-cache:+3.3V #PWR02
+U 1 1 594141D3
+P 4650 3300
+AR Path="/594141D3" Ref="#PWR02"  Part="1" 
+AR Path="/59414144/594141D3" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 4650 3150 50  0001 C CNN
+F 1 "+3.3V" H 4650 3440 50  0000 C CNN
+F 2 "" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3400 4350 3400
+Wire Wire Line
+	4650 3300 4650 3400
+Wire Wire Line
+	3500 3500 3650 3500
+Wire Wire Line
+	3500 3600 3650 3600
+Wire Wire Line
+	3500 3700 3650 3700
+Wire Wire Line
+	3500 3800 3650 3800
+Wire Wire Line
+	3500 3900 3650 3900
+Text GLabel 3650 3500 2    47   Input ~ 0
+LORA_RST
+Text GLabel 3650 3600 2    47   Input ~ 0
+LORA_CS
+Text GLabel 3650 3700 2    47   Input ~ 0
+SPI1_MOSI
+Text GLabel 3650 3800 2    47   Input ~ 0
+SPI1_MISO
+Text GLabel 3650 3900 2    47   Input ~ 0
+SPI1_SCK
+$Comp
+L LoRaModem-cache:C C1
+U 1 1 594142D4
+P 4350 3700
+F 0 "C1" H 4375 3800 50  0000 L CNN
+F 1 "100nF" H 4375 3600 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 4388 3550 50  0001 C CNN
+F 3 "" H 4350 3700 50  0001 C CNN
+	1    4350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaModem-cache:C C2
+U 1 1 59414329
+P 4650 3700
+F 0 "C2" H 4675 3800 50  0000 L CNN
+F 1 "22uF" H 4675 3600 50  0000 L CNN
+F 2 "STD_SMD:C_0805_HandSoldering" H 4688 3550 50  0001 C CNN
+F 3 "" H 4650 3700 50  0001 C CNN
+	1    4650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaModem-cache:GND #PWR03
+U 1 1 59414389
+P 4650 4050
+F 0 "#PWR03" H 4650 3800 50  0001 C CNN
+F 1 "GND" H 4650 3900 50  0000 C CNN
+F 2 "" H 4650 4050 50  0001 C CNN
+F 3 "" H 4650 4050 50  0001 C CNN
+	1    4650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3850 4650 3950
+Wire Wire Line
+	4650 3950 4350 3950
+Wire Wire Line
+	4350 3950 4350 3850
+Connection ~ 4650 3950
+Wire Wire Line
+	4350 3550 4350 3400
+Connection ~ 4350 3400
+Connection ~ 4650 3400
+Wire Wire Line
+	2300 3400 2150 3400
+Text GLabel 2150 3400 0    47   Input ~ 0
+LORA_INT
+NoConn ~ 2300 3500
+NoConn ~ 2300 3600
+NoConn ~ 2300 3700
+NoConn ~ 3500 4000
+NoConn ~ 3500 4100
+$Comp
+L LoRaModem-cache:M25PX32-VMW U2
+U 1 1 5943D20C
+P 8100 3500
+F 0 "U2" H 8300 3900 50  0000 C CNN
+F 1 "W25X40" H 8400 3100 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8750 3550 50  0001 C CNN
+F 3 "" H 8250 3400 50  0001 C CNN
+	1    8100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaModem-cache:+3.3V #PWR04
+U 1 1 5943D449
+P 8100 2800
+AR Path="/5943D449" Ref="#PWR04"  Part="1" 
+AR Path="/59414144/5943D449" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 8100 2650 50  0001 C CNN
+F 1 "+3.3V" H 8100 2940 50  0000 C CNN
+F 2 "" H 8100 2800 50  0001 C CNN
+F 3 "" H 8100 2800 50  0001 C CNN
+	1    8100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2800 8100 2900
+$Comp
+L LoRaModem-cache:GND #PWR05
+U 1 1 5943D4CD
+P 8100 4200
+F 0 "#PWR05" H 8100 3950 50  0001 C CNN
+F 1 "GND" H 8100 4050 50  0000 C CNN
+F 2 "" H 8100 4200 50  0001 C CNN
+F 3 "" H 8100 4200 50  0001 C CNN
+	1    8100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4000 8100 4100
+$Comp
+L LoRaModem-cache:+3.3V #PWR06
+U 1 1 5943D586
+P 7400 3800
+AR Path="/5943D586" Ref="#PWR06"  Part="1" 
+AR Path="/59414144/5943D586" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 7400 3650 50  0001 C CNN
+F 1 "+3.3V" H 7400 3940 50  0000 C CNN
+F 2 "" H 7400 3800 50  0001 C CNN
+F 3 "" H 7400 3800 50  0001 C CNN
+	1    7400 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 3500 7150 3500
+Text GLabel 7150 3500 0    47   Input ~ 0
+FLASH_CS
+Wire Wire Line
+	7150 3600 7250 3600
+Text GLabel 7150 3600 0    47   Input ~ 0
+FLASH_WP
+Wire Wire Line
+	7500 3400 7150 3400
+Text GLabel 7150 3400 0    47   Input ~ 0
+SPI2_SCK
+Wire Wire Line
+	8700 3300 8850 3300
+Text GLabel 8850 3300 2    47   Input ~ 0
+SPI2_MISO
+Wire Wire Line
+	7500 3300 7150 3300
+Text GLabel 7150 3300 0    47   Input ~ 0
+SPI2_MOSI
+Wire Wire Line
+	7500 3700 7400 3700
+Wire Wire Line
+	7400 3700 7400 3800
+$Comp
+L LoRaModem-cache:R R1
+U 1 1 5943DB8E
+P 7650 4100
+F 0 "R1" V 7730 4100 50  0000 C CNN
+F 1 "47K" V 7650 4100 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 7580 4100 50  0001 C CNN
+F 3 "" H 7650 4100 50  0001 C CNN
+	1    7650 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 4100 8100 4100
+Connection ~ 8100 4100
+Wire Wire Line
+	7500 4100 7250 4100
+Wire Wire Line
+	7250 4100 7250 3600
+Connection ~ 7250 3600
+$Comp
+L LoRaModem-cache:C C3
+U 1 1 5943DF20
+P 8350 2900
+F 0 "C3" H 8375 3000 50  0000 L CNN
+F 1 "100nF" H 8375 2800 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 8388 2750 50  0001 C CNN
+F 3 "" H 8350 2900 50  0001 C CNN
+	1    8350 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LoRaModem-cache:GND #PWR07
+U 1 1 5943E076
+P 8600 2900
+F 0 "#PWR07" H 8600 2650 50  0001 C CNN
+F 1 "GND" H 8600 2750 50  0000 C CNN
+F 2 "" H 8600 2900 50  0001 C CNN
+F 3 "" H 8600 2900 50  0001 C CNN
+	1    8600 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 2900 8500 2900
+Wire Wire Line
+	8200 2900 8100 2900
+Connection ~ 8100 2900
+Wire Wire Line
+	2200 4100 2200 4200
+Wire Wire Line
+	2200 4000 2200 4100
+Wire Wire Line
+	2200 3900 2200 4000
+Wire Wire Line
+	4650 3950 4650 4050
+Wire Wire Line
+	4350 3400 4650 3400
+Wire Wire Line
+	4650 3400 4650 3550
+Wire Wire Line
+	8100 4100 8100 4200
+Wire Wire Line
+	7250 3600 7500 3600
+Wire Wire Line
+	8100 2900 8100 3000
+$EndSCHEMATC

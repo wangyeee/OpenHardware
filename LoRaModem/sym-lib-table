@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name LoRaModem-cache)(type Legacy)(uri ${KIPRJMOD}/LoRaModem-cache.lib)(options "")(descr ""))
+)
