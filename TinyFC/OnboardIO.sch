@@ -1,0 +1,1531 @@
+EESchema Schematic File Version 4
+LIBS:tinyfc_core-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "Onboard IO Ports"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tinyfc_core-cache:CONN_01X03 P3
+U 1 1 58E38CBD
+P 2250 1600
+F 0 "P3" H 2250 1800 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 1600 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 1600 50  0001 C CNN
+F 3 "" H 2250 1600 50  0000 C CNN
+	1    2250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P4
+U 1 1 58E38D21
+P 2250 2300
+F 0 "P4" H 2250 2500 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 2300 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 2300 50  0001 C CNN
+F 3 "" H 2250 2300 50  0000 C CNN
+	1    2250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P5
+U 1 1 58E38D8B
+P 2250 2950
+F 0 "P5" H 2250 3150 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 2950 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 2950 50  0001 C CNN
+F 3 "" H 2250 2950 50  0000 C CNN
+	1    2250 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P6
+U 1 1 58E38DDB
+P 2250 3750
+F 0 "P6" H 2250 3950 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 3750 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 3750 50  0001 C CNN
+F 3 "" H 2250 3750 50  0000 C CNN
+	1    2250 3750
+	1    0    0    1   
+$EndComp
+Text GLabel 1900 1500 0    47   Input ~ 0
+PWM1
+Text GLabel 1900 2200 0    47   Input ~ 0
+PWM2
+Text GLabel 1900 2850 0    47   Input ~ 0
+PWM3
+Text GLabel 1900 3650 0    47   Input ~ 0
+PWM4
+Text GLabel 1900 1600 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 1900 2300 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 1900 2950 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 1900 3750 0    47   Input ~ 0
+VIN_RAW
+$Comp
+L tinyfc_core-cache:GND #PWR027
+U 1 1 58E3925F
+P 1950 3950
+F 0 "#PWR027" H 1950 3700 50  0001 C CNN
+F 1 "GND" H 1950 3800 50  0000 C CNN
+F 2 "" H 1950 3950 50  0000 C CNN
+F 3 "" H 1950 3950 50  0000 C CNN
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR028
+U 1 1 58E39285
+P 1950 3150
+F 0 "#PWR028" H 1950 2900 50  0001 C CNN
+F 1 "GND" H 1950 3000 50  0000 C CNN
+F 2 "" H 1950 3150 50  0000 C CNN
+F 3 "" H 1950 3150 50  0000 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR029
+U 1 1 58E392BC
+P 1950 2500
+F 0 "#PWR029" H 1950 2250 50  0001 C CNN
+F 1 "GND" H 1950 2350 50  0000 C CNN
+F 2 "" H 1950 2500 50  0000 C CNN
+F 3 "" H 1950 2500 50  0000 C CNN
+	1    1950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR030
+U 1 1 58E392F3
+P 1950 1800
+F 0 "#PWR030" H 1950 1550 50  0001 C CNN
+F 1 "GND" H 1950 1650 50  0000 C CNN
+F 2 "" H 1950 1800 50  0000 C CNN
+F 3 "" H 1950 1800 50  0000 C CNN
+	1    1950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P7
+U 1 1 58E39735
+P 2250 4600
+F 0 "P7" H 2250 4800 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 4600 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 4600 50  0001 C CNN
+F 3 "" H 2250 4600 50  0000 C CNN
+	1    2250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P8
+U 1 1 58E3973B
+P 2250 5300
+F 0 "P8" H 2250 5500 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 5300 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 5300 50  0001 C CNN
+F 3 "" H 2250 5300 50  0000 C CNN
+	1    2250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P9
+U 1 1 58E39741
+P 2250 5950
+F 0 "P9" H 2250 6150 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 5950 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 5950 50  0001 C CNN
+F 3 "" H 2250 5950 50  0000 C CNN
+	1    2250 5950
+	1    0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P10
+U 1 1 58E39747
+P 2250 6750
+F 0 "P10" H 2250 6950 50  0000 C CNN
+F 1 "CONN_01X03" V 2350 6750 50  0000 C CNN
+F 2 "Connector:M03_SMD-JP" H 2250 6750 50  0001 C CNN
+F 3 "" H 2250 6750 50  0000 C CNN
+	1    2250 6750
+	1    0    0    1   
+$EndComp
+Text GLabel 1900 4500 0    47   Input ~ 0
+PWM5
+Text GLabel 1900 5200 0    47   Input ~ 0
+PWM6
+Text GLabel 1900 5850 0    47   Input ~ 0
+PWM7
+Text GLabel 1900 6650 0    47   Input ~ 0
+PWM8
+Text GLabel 1900 4600 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 1900 5300 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 1900 5950 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 1900 6750 0    47   Input ~ 0
+VIN_RAW
+$Comp
+L tinyfc_core-cache:GND #PWR031
+U 1 1 58E3975D
+P 1950 6950
+F 0 "#PWR031" H 1950 6700 50  0001 C CNN
+F 1 "GND" H 1950 6800 50  0000 C CNN
+F 2 "" H 1950 6950 50  0000 C CNN
+F 3 "" H 1950 6950 50  0000 C CNN
+	1    1950 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR032
+U 1 1 58E39763
+P 1950 6150
+F 0 "#PWR032" H 1950 5900 50  0001 C CNN
+F 1 "GND" H 1950 6000 50  0000 C CNN
+F 2 "" H 1950 6150 50  0000 C CNN
+F 3 "" H 1950 6150 50  0000 C CNN
+	1    1950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR033
+U 1 1 58E39769
+P 1950 5500
+F 0 "#PWR033" H 1950 5250 50  0001 C CNN
+F 1 "GND" H 1950 5350 50  0000 C CNN
+F 2 "" H 1950 5500 50  0000 C CNN
+F 3 "" H 1950 5500 50  0000 C CNN
+	1    1950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR034
+U 1 1 58E3976F
+P 1950 4800
+F 0 "#PWR034" H 1950 4550 50  0001 C CNN
+F 1 "GND" H 1950 4650 50  0000 C CNN
+F 2 "" H 1950 4800 50  0000 C CNN
+F 3 "" H 1950 4800 50  0000 C CNN
+	1    1950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P11
+U 1 1 58E39ABE
+P 10300 2000
+F 0 "P11" H 10300 2200 50  0000 C CNN
+F 1 "CONN_01X03" V 10400 2000 50  0000 C CNN
+F 2 "Connector:M03_SMD" H 10300 2000 50  0001 C CNN
+F 3 "" H 10300 2000 50  0000 C CNN
+	1    10300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X03 P12
+U 1 1 58E39BCA
+P 10200 3650
+F 0 "P12" H 10200 3850 50  0000 C CNN
+F 1 "CONN_01X03" V 10300 3650 50  0000 C CNN
+F 2 "Connector:M03_SMD" H 10200 3650 50  0001 C CNN
+F 3 "" H 10200 3650 50  0000 C CNN
+	1    10200 3650
+	1    0    0    1   
+$EndComp
+Text GLabel 9850 3550 0    47   Input ~ 0
+RC2_RX
+Text GLabel 9950 1900 0    47   Input ~ 0
+RC1_RX
+$Comp
+L tinyfc_core-cache:JUMPER3 JP1
+U 1 1 58E39F37
+P 9450 2000
+F 0 "JP1" H 9500 1900 50  0000 L CNN
+F 1 "JUMPER3" H 9450 2100 50  0000 C BNN
+F 2 "PCB_Misc:JUMPER_DUAL_SMALL" H 9450 2000 50  0001 C CNN
+F 3 "" H 9450 2000 50  0000 C CNN
+	1    9450 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:JUMPER3 JP2
+U 1 1 58E39FAB
+P 9350 3650
+F 0 "JP2" H 9400 3550 50  0000 L CNN
+F 1 "JUMPER3" H 9350 3750 50  0000 C BNN
+F 2 "PCB_Misc:JUMPER_DUAL_SMALL" H 9350 3650 50  0001 C CNN
+F 3 "" H 9350 3650 50  0000 C CNN
+	1    9350 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:+3.3V #PWR035
+U 1 1 58E3A091
+P 9450 1650
+AR Path="/58E3A091" Ref="#PWR035"  Part="1" 
+AR Path="/58E38B8F/58E3A091" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 9450 1500 50  0001 C CNN
+F 1 "+3.3V" H 9450 1790 50  0000 C CNN
+F 2 "" H 9450 1650 50  0000 C CNN
+F 3 "" H 9450 1650 50  0000 C CNN
+	1    9450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:+3.3V #PWR036
+U 1 1 58E3A193
+P 9350 3300
+AR Path="/58E3A193" Ref="#PWR036"  Part="1" 
+AR Path="/58E38B8F/58E3A193" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 9350 3150 50  0001 C CNN
+F 1 "+3.3V" H 9350 3440 50  0000 C CNN
+F 2 "" H 9350 3300 50  0000 C CNN
+F 3 "" H 9350 3300 50  0000 C CNN
+	1    9350 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 4000 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 9350 2350 0    47   Input ~ 0
+VIN_RAW
+$Comp
+L tinyfc_core-cache:GND #PWR037
+U 1 1 58E3A804
+P 9900 3850
+F 0 "#PWR037" H 9900 3600 50  0001 C CNN
+F 1 "GND" H 9900 3700 50  0000 C CNN
+F 2 "" H 9900 3850 50  0000 C CNN
+F 3 "" H 9900 3850 50  0000 C CNN
+	1    9900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR038
+U 1 1 58E3A943
+P 10000 2200
+F 0 "#PWR038" H 10000 1950 50  0001 C CNN
+F 1 "GND" H 10000 2050 50  0000 C CNN
+F 2 "" H 10000 2200 50  0000 C CNN
+F 3 "" H 10000 2200 50  0000 C CNN
+	1    10000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:74AHC1G86 U6
+U 1 1 58E6455F
+P 8050 1800
+F 0 "U6" H 7950 1950 50  0000 C CNN
+F 1 "74AHC1G86" H 8050 1650 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 8050 1800 50  0001 C CNN
+F 3 "" H 8050 1800 50  0000 C CNN
+	1    8050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:+3.3V #PWR039
+U 1 1 58E64D6F
+P 8050 1500
+AR Path="/58E64D6F" Ref="#PWR039"  Part="1" 
+AR Path="/58E38B8F/58E64D6F" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 8050 1350 50  0001 C CNN
+F 1 "+3.3V" H 8050 1640 50  0000 C CNN
+F 2 "" H 8050 1500 50  0000 C CNN
+F 3 "" H 8050 1500 50  0000 C CNN
+	1    8050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR040
+U 1 1 58E64F88
+P 8050 2500
+F 0 "#PWR040" H 8050 2250 50  0001 C CNN
+F 1 "GND" H 8050 2350 50  0000 C CNN
+F 2 "" H 8050 2500 50  0000 C CNN
+F 3 "" H 8050 2500 50  0000 C CNN
+	1    8050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R12
+U 1 1 58E65089
+P 7650 2100
+F 0 "R12" V 7730 2100 50  0000 C CNN
+F 1 "10K" V 7650 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7580 2100 50  0001 C CNN
+F 3 "" H 7650 2100 50  0000 C CNN
+	1    7650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R10
+U 1 1 58E6534F
+P 7450 2100
+F 0 "R10" V 7530 2100 50  0000 C CNN
+F 1 "10K" V 7450 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7380 2100 50  0001 C CNN
+F 3 "" H 7450 2100 50  0000 C CNN
+	1    7450 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 1850 0    47   Input ~ 0
+RC1_RX
+$Comp
+L tinyfc_core-cache:C C20
+U 1 1 58E659CF
+P 8450 2100
+F 0 "C20" H 8475 2200 50  0000 L CNN
+F 1 "100nF" H 8475 2000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8488 1950 50  0001 C CNN
+F 3 "" H 8450 2100 50  0000 C CNN
+	1    8450 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 1750 0    47   Input ~ 0
+U4TX
+Text GLabel 8550 1800 2    47   Input ~ 0
+U4RX
+$Comp
+L tinyfc_core-cache:74AHC1G86 U7
+U 1 1 58E66236
+P 8050 3450
+F 0 "U7" H 7950 3600 50  0000 C CNN
+F 1 "74AHC1G86" H 8050 3300 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 8050 3450 50  0001 C CNN
+F 3 "" H 8050 3450 50  0000 C CNN
+	1    8050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C21
+U 1 1 58E66401
+P 8400 3750
+F 0 "C21" H 8425 3850 50  0000 L CNN
+F 1 "100nF" H 8425 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8438 3600 50  0001 C CNN
+F 3 "" H 8400 3750 50  0000 C CNN
+	1    8400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R11
+U 1 1 58E66575
+P 7450 3750
+F 0 "R11" V 7530 3750 50  0000 C CNN
+F 1 "10K" V 7450 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7380 3750 50  0001 C CNN
+F 3 "" H 7450 3750 50  0000 C CNN
+	1    7450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R13
+U 1 1 58E666A3
+P 7650 3750
+F 0 "R13" V 7730 3750 50  0000 C CNN
+F 1 "10K" V 7650 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7580 3750 50  0001 C CNN
+F 3 "" H 7650 3750 50  0000 C CNN
+	1    7650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR041
+U 1 1 58E66A5D
+P 8050 4100
+F 0 "#PWR041" H 8050 3850 50  0001 C CNN
+F 1 "GND" H 8050 3950 50  0000 C CNN
+F 2 "" H 8050 4100 50  0000 C CNN
+F 3 "" H 8050 4100 50  0000 C CNN
+	1    8050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:+3.3V #PWR042
+U 1 1 58E66D52
+P 8050 3150
+AR Path="/58E66D52" Ref="#PWR042"  Part="1" 
+AR Path="/58E38B8F/58E66D52" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 8050 3000 50  0001 C CNN
+F 1 "+3.3V" H 8050 3290 50  0000 C CNN
+F 2 "" H 8050 3150 50  0000 C CNN
+F 3 "" H 8050 3150 50  0000 C CNN
+	1    8050 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 3500 0    47   Input ~ 0
+RC2_RX
+Text GLabel 7350 3400 0    47   Input ~ 0
+U2TX
+Text GLabel 8500 3450 2    47   Input ~ 0
+U2RX
+$Comp
+L tinyfc_core-cache:R_PACK4 RP1
+U 1 1 58E6971D
+P 3850 1900
+F 0 "RP1" H 3850 2350 50  0000 C CNN
+F 1 "100" H 3850 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0603" H 3850 1900 50  0001 C CNN
+F 3 "" H 3850 1900 50  0000 C CNN
+	1    3850 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 1550 0    47   Input ~ 0
+PWM1
+Text GLabel 3500 1650 0    47   Input ~ 0
+PWM3
+Text GLabel 3500 1750 0    47   Input ~ 0
+PWM4
+Text GLabel 3500 1850 0    47   Input ~ 0
+PWM2
+Text GLabel 4200 1550 2    47   Input ~ 0
+T3C3
+Text GLabel 4200 1650 2    47   Input ~ 0
+T3C4
+Text GLabel 4200 1750 2    47   Input ~ 0
+T12C1
+Text GLabel 4200 1850 2    47   Input ~ 0
+T12C2
+$Comp
+L tinyfc_core-cache:R_PACK4 RP2
+U 1 1 58E6B522
+P 5450 1900
+F 0 "RP2" H 5450 2350 50  0000 C CNN
+F 1 "100" H 5450 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0603" H 5450 1900 50  0001 C CNN
+F 3 "" H 5450 1900 50  0000 C CNN
+	1    5450 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 1550 0    47   Input ~ 0
+PWM6
+Text GLabel 5100 1650 0    47   Input ~ 0
+PWM8
+Text GLabel 5100 1750 0    47   Input ~ 0
+PWM5
+Text GLabel 5100 1850 0    47   Input ~ 0
+PWM7
+Text GLabel 5850 1550 2    47   Input ~ 0
+T3C1
+Text GLabel 5850 1650 2    47   Input ~ 0
+T3C2
+Text GLabel 5850 1750 2    47   Input ~ 0
+T4C1
+Text GLabel 5850 1850 2    47   Input ~ 0
+T4C2
+$Comp
+L tinyfc_core-cache:USB-AB P13
+U 1 1 58E89866
+P 3500 2550
+F 0 "P13" H 3450 2900 45  0000 C CNN
+F 1 "USB-AB" H 3400 2200 45  0000 C CNN
+F 2 "USB-Connectors:USB-AB-MICRO" H 3400 2550 60  0001 C CNN
+F 3 "" H 3400 2550 60  0001 C CNN
+	1    3500 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:PRTR5V0U2X D1
+U 1 1 58E89A1F
+P 4500 2800
+F 0 "D1" H 4750 2800 50  0000 C CNN
+F 1 "PRTR5V0U2X" H 4500 2550 50  0000 C CNN
+F 2 "ESD:SOT143B" H 4550 2750 50  0001 C CNN
+F 3 "" H 4550 2750 50  0000 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R16
+U 1 1 58E89A76
+P 5250 2450
+F 0 "R16" V 5150 2450 50  0000 C CNN
+F 1 "22" V 5250 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5180 2450 50  0001 C CNN
+F 3 "" H 5250 2450 50  0000 C CNN
+	1    5250 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R17
+U 1 1 58E89BD8
+P 5250 2550
+F 0 "R17" V 5330 2550 50  0000 C CNN
+F 1 "22" V 5250 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5180 2550 50  0001 C CNN
+F 3 "" H 5250 2550 50  0000 C CNN
+	1    5250 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R15
+U 1 1 58E8A53D
+P 4000 2900
+F 0 "R15" V 4080 2900 50  0000 C CNN
+F 1 "100K" V 4000 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3930 2900 50  0001 C CNN
+F 3 "" H 4000 2900 50  0000 C CNN
+	1    4000 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R14
+U 1 1 58E8A7E2
+P 3600 3050
+F 0 "R14" V 3680 3050 50  0000 C CNN
+F 1 "1M" V 3600 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3530 3050 50  0001 C CNN
+F 3 "" H 3600 3050 50  0000 C CNN
+	1    3600 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:C C22
+U 1 1 58E8A8B0
+P 3600 3200
+F 0 "C22" H 3625 3300 50  0000 L CNN
+F 1 "100nF" H 3625 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3638 3050 50  0001 C CNN
+F 3 "" H 3600 3200 50  0000 C CNN
+	1    3600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR043
+U 1 1 58E8AC40
+P 4000 3300
+F 0 "#PWR043" H 4000 3050 50  0001 C CNN
+F 1 "GND" H 4000 3150 50  0000 C CNN
+F 2 "" H 4000 3300 50  0000 C CNN
+F 3 "" H 4000 3300 50  0000 C CNN
+	1    4000 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 2350 2    47   Input ~ 0
+USB_VBUS
+Text GLabel 5500 2450 2    47   Input ~ 0
+USBDM
+Text GLabel 5500 2550 2    47   Input ~ 0
+USBDP
+$Comp
+L tinyfc_core-cache:TJA1050 U8
+U 1 1 58E8E70D
+P 4350 4200
+F 0 "U8" H 4350 4450 47  0000 C CNN
+F 1 "TJA1050" H 4350 3950 47  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4350 4200 47  0001 C CNN
+F 3 "" H 4350 4200 47  0001 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C23
+U 1 1 58E8E8A8
+P 3300 4200
+F 0 "C23" H 3325 4300 50  0000 L CNN
+F 1 "100nF" H 3325 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3338 4050 50  0001 C CNN
+F 3 "" H 3300 4200 50  0000 C CNN
+	1    3300 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR044
+U 1 1 58E8EB5E
+P 3300 4450
+F 0 "#PWR044" H 3300 4200 50  0001 C CNN
+F 1 "GND" H 3300 4300 50  0000 C CNN
+F 2 "" H 3300 4450 50  0000 C CNN
+F 3 "" H 3300 4450 50  0000 C CNN
+	1    3300 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 4350
+NoConn ~ 4800 4050
+$Comp
+L tinyfc_core-cache:+5V #PWR045
+U 1 1 58E8EE7E
+P 3300 3950
+F 0 "#PWR045" H 3300 3800 50  0001 C CNN
+F 1 "+5V" H 3300 4090 50  0000 C CNN
+F 2 "" H 3300 3950 50  0000 C CNN
+F 3 "" H 3300 3950 50  0000 C CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 4150 0    47   Input ~ 0
+CAN1_TX
+Text GLabel 3750 4250 0    47   Input ~ 0
+CAN1_RX
+$Comp
+L tinyfc_core-cache:R R18
+U 1 1 58E8F9BB
+P 5050 4200
+F 0 "R18" V 5130 4200 50  0000 C CNN
+F 1 "120" V 5050 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4980 4200 50  0001 C CNN
+F 3 "" H 5050 4200 50  0000 C CNN
+	1    5050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:PESD3V3L2BT D2
+U 1 1 58E8FAB6
+P 5450 4600
+F 0 "D2" H 5600 4750 50  0000 L CNN
+F 1 "PESDCAN" H 5500 4450 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5675 4550 50  0001 L CNN
+F 3 "" H 5575 4725 50  0001 C CNN
+	1    5450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X04 P14
+U 1 1 58E8FBCC
+P 6150 4200
+F 0 "P14" H 6150 4450 50  0000 C CNN
+F 1 "CONN_01X04" V 6250 4200 50  0000 C CNN
+F 2 "Connector:M04" H 6150 4200 50  0001 C CNN
+F 3 "" H 6150 4200 50  0000 C CNN
+	1    6150 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 4050 0    47   Input ~ 0
+VIN_RAW
+$Comp
+L tinyfc_core-cache:GND #PWR046
+U 1 1 58E911BF
+P 5450 4900
+F 0 "#PWR046" H 5450 4650 50  0001 C CNN
+F 1 "GND" H 5450 4750 50  0000 C CNN
+F 2 "" H 5450 4900 50  0000 C CNN
+F 3 "" H 5450 4900 50  0000 C CNN
+	1    5450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:CONN_01X06 P15
+U 1 1 58E92605
+P 4400 5650
+F 0 "P15" H 4400 6000 50  0000 C CNN
+F 1 "CONN_01X06" V 4500 5650 50  0000 C CNN
+F 2 "Connector:M04-1.25T" H 4400 5650 50  0001 C CNN
+F 3 "" H 4400 5650 50  0000 C CNN
+	1    4400 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR047
+U 1 1 58E926C1
+P 4100 6200
+F 0 "#PWR047" H 4100 5950 50  0001 C CNN
+F 1 "GND" H 4100 6050 50  0000 C CNN
+F 2 "" H 4100 6200 50  0000 C CNN
+F 3 "" H 4100 6200 50  0000 C CNN
+	1    4100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:PESD3V3L2BT D3
+U 1 1 58E92F84
+P 3800 5850
+F 0 "D3" H 4025 5950 50  0000 L CNN
+F 1 "PESD3V3" H 4025 5875 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4025 5800 50  0001 L CNN
+F 3 "" H 3925 5975 50  0001 C CNN
+	1    3800 5850
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3450 5500 0    47   Input ~ 0
+U1TX
+Text GLabel 3450 5600 0    47   Input ~ 0
+U1RX
+$Comp
+L tinyfc_core-cache:CONN_01X06 P16
+U 1 1 58E949F8
+P 6050 5650
+F 0 "P16" H 6050 6000 50  0000 C CNN
+F 1 "CONN_01X06" V 6150 5650 50  0000 C CNN
+F 2 "Connector:M04-1.25T" H 6050 5650 50  0001 C CNN
+F 3 "" H 6050 5650 50  0000 C CNN
+	1    6050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:PESD3V3L2BT D4
+U 1 1 58E94AAB
+P 5450 5850
+F 0 "D4" H 5675 5950 50  0000 L CNN
+F 1 "PESD3V3" H 5675 5875 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5675 5800 50  0001 L CNN
+F 3 "" H 5575 5975 50  0001 C CNN
+	1    5450 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR048
+U 1 1 58E94B5F
+P 5750 6200
+F 0 "#PWR048" H 5750 5950 50  0001 C CNN
+F 1 "GND" H 5750 6050 50  0000 C CNN
+F 2 "" H 5750 6200 50  0000 C CNN
+F 3 "" H 5750 6200 50  0000 C CNN
+	1    5750 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 5500 0    47   Input ~ 0
+U6TX
+Text GLabel 5150 5600 0    47   Input ~ 0
+U6RX
+Text GLabel 5150 5400 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 3450 5400 0    47   Input ~ 0
+VIN_RAW
+Text GLabel 5150 4050 1    47   Input ~ 0
+CANL
+Text GLabel 5150 4350 3    47   Input ~ 0
+CANH
+$Comp
+L tinyfc_core-cache:CONN_01X04 P17
+U 1 1 58EA6E0F
+P 6100 6900
+F 0 "P17" H 6100 7150 50  0000 C CNN
+F 1 "CONN_01X04" V 6200 6900 50  0000 C CNN
+F 2 "Connector:M02-1.25T" H 6100 6900 50  0001 C CNN
+F 3 "" H 6100 6900 50  0000 C CNN
+	1    6100 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR049
+U 1 1 58EA7063
+P 5800 7350
+F 0 "#PWR049" H 5800 7100 50  0001 C CNN
+F 1 "GND" H 5800 7200 50  0000 C CNN
+F 2 "" H 5800 7350 50  0000 C CNN
+F 3 "" H 5800 7350 50  0000 C CNN
+	1    5800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GNDA #PWR050
+U 1 1 58EA772B
+P 5600 7350
+F 0 "#PWR050" H 5600 7100 50  0001 C CNN
+F 1 "GNDA" H 5600 7200 50  0000 C CNN
+F 2 "" H 5600 7350 50  0000 C CNN
+F 3 "" H 5600 7350 50  0000 C CNN
+	1    5600 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R23
+U 1 1 58EA87A5
+P 5150 7000
+F 0 "R23" V 5230 7000 50  0000 C CNN
+F 1 "1K" V 5150 7000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 7000 50  0001 C CNN
+F 3 "" H 5150 7000 50  0000 C CNN
+	1    5150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R24
+U 1 1 58EA8B4E
+P 5700 6750
+F 0 "R24" V 5780 6750 50  0000 C CNN
+F 1 "10K" V 5700 6750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 6750 50  0001 C CNN
+F 3 "" H 5700 6750 50  0000 C CNN
+	1    5700 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:C C24
+U 1 1 58EA92D2
+P 4950 7000
+F 0 "C24" H 4975 7100 50  0000 L CNN
+F 1 "100nF" H 4975 6900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4988 6850 50  0001 C CNN
+F 3 "" H 4950 7000 50  0000 C CNN
+	1    4950 7000
+	-1   0    0    1   
+$EndComp
+Text GLabel 4650 6750 0    47   Input ~ 0
+ADC1_IN13
+Wire Wire Line
+	2050 1500 1900 1500
+Wire Wire Line
+	2050 2200 1900 2200
+Wire Wire Line
+	2050 2850 1900 2850
+Wire Wire Line
+	2050 3650 1900 3650
+Wire Wire Line
+	2050 3750 1900 3750
+Wire Wire Line
+	2050 2950 1900 2950
+Wire Wire Line
+	2050 2300 1900 2300
+Wire Wire Line
+	2050 1600 1900 1600
+Wire Wire Line
+	2050 3850 1950 3850
+Wire Wire Line
+	1950 3850 1950 3950
+Wire Wire Line
+	2050 3050 1950 3050
+Wire Wire Line
+	1950 3050 1950 3150
+Wire Wire Line
+	2050 2400 1950 2400
+Wire Wire Line
+	1950 2400 1950 2500
+Wire Wire Line
+	2050 1700 1950 1700
+Wire Wire Line
+	1950 1700 1950 1800
+Wire Wire Line
+	2050 4500 1900 4500
+Wire Wire Line
+	2050 5200 1900 5200
+Wire Wire Line
+	2050 5850 1900 5850
+Wire Wire Line
+	2050 6650 1900 6650
+Wire Wire Line
+	2050 6750 1900 6750
+Wire Wire Line
+	2050 5950 1900 5950
+Wire Wire Line
+	2050 5300 1900 5300
+Wire Wire Line
+	2050 4600 1900 4600
+Wire Wire Line
+	2050 6850 1950 6850
+Wire Wire Line
+	1950 6850 1950 6950
+Wire Wire Line
+	2050 6050 1950 6050
+Wire Wire Line
+	1950 6050 1950 6150
+Wire Wire Line
+	2050 5400 1950 5400
+Wire Wire Line
+	1950 5400 1950 5500
+Wire Wire Line
+	2050 4700 1950 4700
+Wire Wire Line
+	1950 4700 1950 4800
+Wire Wire Line
+	10100 1900 9950 1900
+Wire Wire Line
+	10000 3550 9850 3550
+Wire Wire Line
+	9450 1650 9450 1750
+Wire Wire Line
+	9350 3300 9350 3400
+Wire Wire Line
+	9450 2250 9450 2350
+Wire Wire Line
+	9450 2350 9350 2350
+Wire Wire Line
+	9350 3900 9350 4000
+Wire Wire Line
+	9350 4000 9250 4000
+Wire Wire Line
+	9550 2000 10100 2000
+Wire Wire Line
+	9450 3650 10000 3650
+Wire Wire Line
+	10000 3750 9900 3750
+Wire Wire Line
+	9900 3750 9900 3850
+Wire Wire Line
+	10100 2100 10000 2100
+Wire Wire Line
+	10000 2100 10000 2200
+Wire Wire Line
+	8050 1500 8050 1600
+Wire Wire Line
+	8050 1900 8050 2350
+Wire Wire Line
+	7300 1850 7650 1850
+Wire Wire Line
+	7650 1850 7650 1950
+Wire Wire Line
+	7300 1750 7450 1750
+Wire Wire Line
+	7450 1750 7450 1950
+Connection ~ 7650 1850
+Connection ~ 7450 1750
+Wire Wire Line
+	7450 2350 7650 2350
+Wire Wire Line
+	7450 2350 7450 2250
+Connection ~ 8050 2350
+Wire Wire Line
+	7650 2250 7650 2350
+Connection ~ 7650 2350
+Wire Wire Line
+	8450 2350 8450 2250
+Wire Wire Line
+	8450 1950 8450 1600
+Wire Wire Line
+	8450 1600 8050 1600
+Connection ~ 8050 1600
+Wire Wire Line
+	8300 1800 8550 1800
+Wire Wire Line
+	8050 3550 8050 4000
+Wire Wire Line
+	8050 3150 8050 3250
+Wire Wire Line
+	7350 3500 7650 3500
+Wire Wire Line
+	7650 3500 7650 3600
+Wire Wire Line
+	7350 3400 7450 3400
+Wire Wire Line
+	7450 3400 7450 3600
+Connection ~ 7650 3500
+Connection ~ 7450 3400
+Wire Wire Line
+	7450 3900 7450 4000
+Wire Wire Line
+	7450 4000 7650 4000
+Connection ~ 8050 4000
+Wire Wire Line
+	8400 4000 8400 3900
+Wire Wire Line
+	7650 3900 7650 4000
+Connection ~ 7650 4000
+Wire Wire Line
+	8400 3600 8400 3250
+Wire Wire Line
+	8400 3250 8050 3250
+Connection ~ 8050 3250
+Wire Wire Line
+	8300 3450 8500 3450
+Wire Wire Line
+	3650 1550 3500 1550
+Wire Wire Line
+	3650 1650 3500 1650
+Wire Wire Line
+	3650 1750 3500 1750
+Wire Wire Line
+	3650 1850 3500 1850
+Wire Wire Line
+	4050 1550 4200 1550
+Wire Wire Line
+	4050 1650 4200 1650
+Wire Wire Line
+	4050 1750 4200 1750
+Wire Wire Line
+	4050 1850 4200 1850
+Wire Wire Line
+	5250 1550 5100 1550
+Wire Wire Line
+	5250 1650 5100 1650
+Wire Wire Line
+	5250 1750 5100 1750
+Wire Wire Line
+	5250 1850 5100 1850
+Wire Wire Line
+	5650 1550 5850 1550
+Wire Wire Line
+	5650 1650 5850 1650
+Wire Wire Line
+	5650 1750 5850 1750
+Wire Wire Line
+	5650 1850 5850 1850
+Wire Wire Line
+	3400 2950 3400 3050
+Wire Wire Line
+	3250 3200 3400 3200
+Wire Wire Line
+	3450 3050 3400 3050
+Connection ~ 3400 3050
+Wire Wire Line
+	3750 3200 3850 3200
+Wire Wire Line
+	4000 3050 4000 3200
+Connection ~ 4000 3200
+Wire Wire Line
+	3750 3050 3850 3050
+Wire Wire Line
+	3850 2750 3850 3050
+Connection ~ 3850 3200
+Wire Wire Line
+	3800 2750 3850 2750
+Connection ~ 3850 3050
+Wire Wire Line
+	4000 2750 4000 2650
+Wire Wire Line
+	4000 2650 3800 2650
+Wire Wire Line
+	4150 3200 4150 2900
+Wire Wire Line
+	4150 2900 4200 2900
+Wire Wire Line
+	3800 2550 5000 2550
+Wire Wire Line
+	3800 2450 4900 2450
+Wire Wire Line
+	4800 2700 5000 2700
+Wire Wire Line
+	3800 2350 4100 2350
+Wire Wire Line
+	4100 2350 4100 2700
+Wire Wire Line
+	4100 2700 4200 2700
+Connection ~ 4100 2350
+Wire Wire Line
+	3400 2150 3400 2100
+Wire Wire Line
+	3400 2100 3250 2100
+Wire Wire Line
+	3250 2100 3250 3200
+Connection ~ 3400 3200
+Wire Wire Line
+	5400 2450 5500 2450
+Wire Wire Line
+	5400 2550 5500 2550
+Wire Wire Line
+	5000 2700 5000 2550
+Connection ~ 5000 2550
+Wire Wire Line
+	4800 2900 4900 2900
+Wire Wire Line
+	4900 2900 4900 2450
+Connection ~ 4900 2450
+Wire Wire Line
+	3900 4150 3750 4150
+Wire Wire Line
+	3900 4250 3750 4250
+Wire Wire Line
+	4800 4150 4900 4150
+Wire Wire Line
+	4900 4150 4900 4050
+Wire Wire Line
+	4900 4050 5050 4050
+Wire Wire Line
+	4800 4250 4900 4250
+Wire Wire Line
+	4900 4250 4900 4350
+Wire Wire Line
+	4900 4350 5050 4350
+Wire Wire Line
+	5250 4350 5250 4250
+Wire Wire Line
+	5250 4250 5350 4250
+Connection ~ 5050 4350
+Wire Wire Line
+	5250 4050 5250 4150
+Wire Wire Line
+	5250 4150 5550 4150
+Connection ~ 5050 4050
+Wire Wire Line
+	5350 4400 5350 4250
+Connection ~ 5350 4250
+Wire Wire Line
+	5550 4400 5550 4150
+Connection ~ 5550 4150
+Wire Wire Line
+	5950 4050 5700 4050
+Wire Wire Line
+	5450 4800 5450 4850
+Wire Wire Line
+	3300 4050 3900 4050
+Wire Wire Line
+	3300 4350 3300 4450
+Wire Wire Line
+	3300 4350 3900 4350
+Wire Wire Line
+	3300 4050 3300 3950
+Wire Wire Line
+	4200 5700 4100 5700
+Wire Wire Line
+	4100 5700 4100 5800
+Wire Wire Line
+	4200 5900 4100 5900
+Connection ~ 4100 5900
+Wire Wire Line
+	4200 5800 4100 5800
+Connection ~ 4100 5800
+Wire Wire Line
+	3450 5600 3900 5600
+Wire Wire Line
+	3900 5600 3900 5650
+Wire Wire Line
+	3450 5500 3700 5500
+Wire Wire Line
+	3700 5500 3700 5650
+Connection ~ 3700 5500
+Connection ~ 3900 5600
+Wire Wire Line
+	4100 6100 3800 6100
+Wire Wire Line
+	3800 6100 3800 6050
+Connection ~ 4100 6100
+Wire Wire Line
+	5850 5700 5750 5700
+Wire Wire Line
+	5750 5700 5750 5800
+Wire Wire Line
+	5450 6050 5450 6100
+Wire Wire Line
+	5450 6100 5750 6100
+Connection ~ 5750 6100
+Wire Wire Line
+	5850 5900 5750 5900
+Connection ~ 5750 5900
+Wire Wire Line
+	5850 5800 5750 5800
+Connection ~ 5750 5800
+Wire Wire Line
+	5150 5600 5550 5600
+Wire Wire Line
+	5550 5600 5550 5650
+Wire Wire Line
+	5150 5500 5350 5500
+Wire Wire Line
+	5350 5500 5350 5650
+Connection ~ 5550 5600
+Connection ~ 5350 5500
+Wire Wire Line
+	3450 5400 4200 5400
+Wire Wire Line
+	5850 5400 5150 5400
+Wire Wire Line
+	5450 4850 5900 4850
+Wire Wire Line
+	5900 4850 5900 4350
+Wire Wire Line
+	5900 4350 5950 4350
+Connection ~ 5450 4850
+Wire Wire Line
+	5900 6950 5800 6950
+Wire Wire Line
+	5800 6950 5800 7050
+Wire Wire Line
+	5900 7050 5800 7050
+Connection ~ 5800 7050
+Wire Wire Line
+	5600 6850 5600 7250
+Wire Wire Line
+	5600 6850 5900 6850
+Wire Wire Line
+	4950 7150 4950 7250
+Wire Wire Line
+	4950 7250 5150 7250
+Connection ~ 5600 7250
+Wire Wire Line
+	5150 7150 5150 7250
+Connection ~ 5150 7250
+Wire Wire Line
+	5850 6750 5900 6750
+Wire Wire Line
+	4650 6750 4950 6750
+Wire Wire Line
+	5150 6750 5150 6850
+Wire Wire Line
+	4950 6750 4950 6850
+Connection ~ 5150 6750
+Connection ~ 4950 6750
+$Comp
+L tinyfc_core-cache:ZENERsmall D7
+U 1 1 58EAB531
+P 5400 7000
+F 0 "D7" H 5400 7100 50  0000 C CNN
+F 1 "PESD3V3" H 5400 6900 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323_HandSoldering" H 5400 7000 50  0001 C CNN
+F 3 "" H 5400 7000 50  0000 C CNN
+	1    5400 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 7100 5400 7250
+Connection ~ 5400 7250
+Wire Wire Line
+	5400 6900 5400 6750
+Connection ~ 5400 6750
+$Comp
+L tinyfc_core-cache:R R25
+U 1 1 58EAD9FA
+P 8300 4750
+F 0 "R25" V 8380 4750 50  0000 C CNN
+F 1 "470" V 8300 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8230 4750 50  0001 C CNN
+F 3 "" H 8300 4750 50  0000 C CNN
+	1    8300 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:LED-RESCUE-tinyfc_core D8
+U 1 1 58EADC6C
+P 8750 4750
+F 0 "D8" H 8750 4850 50  0000 C CNN
+F 1 "GREEN" H 8750 4650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 8750 4750 50  0001 C CNN
+F 3 "" H 8750 4750 50  0000 C CNN
+	1    8750 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:LED-RESCUE-tinyfc_core D9
+U 1 1 58EADDCA
+P 8750 5300
+F 0 "D9" H 8750 5400 50  0000 C CNN
+F 1 "BLUE" H 8750 5200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 8750 5300 50  0001 C CNN
+F 3 "" H 8750 5300 50  0000 C CNN
+	1    8750 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:LED-RESCUE-tinyfc_core D10
+U 1 1 58EADE74
+P 9200 5850
+F 0 "D10" H 9200 5950 50  0000 C CNN
+F 1 "RED" H 9200 5750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9200 5850 50  0001 C CNN
+F 3 "" H 9200 5850 50  0000 C CNN
+	1    9200 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R26
+U 1 1 58EAE0AB
+P 8300 5300
+F 0 "R26" V 8380 5300 50  0000 C CNN
+F 1 "470" V 8300 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8230 5300 50  0001 C CNN
+F 3 "" H 8300 5300 50  0000 C CNN
+	1    8300 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R27
+U 1 1 58EAE157
+P 8550 5850
+F 0 "R27" V 8630 5850 50  0000 C CNN
+F 1 "470" V 8550 5850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8480 5850 50  0001 C CNN
+F 3 "" H 8550 5850 50  0000 C CNN
+	1    8550 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 5850 9000 5850
+Wire Wire Line
+	8450 5300 8550 5300
+Wire Wire Line
+	8450 4750 8550 4750
+$Comp
+L tinyfc_core-cache:GND #PWR051
+U 1 1 58EAE61B
+P 9750 5950
+F 0 "#PWR051" H 9750 5700 50  0001 C CNN
+F 1 "GND" H 9750 5800 50  0000 C CNN
+F 2 "" H 9750 5950 50  0000 C CNN
+F 3 "" H 9750 5950 50  0000 C CNN
+	1    9750 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4750 9750 5300
+Wire Wire Line
+	9400 5850 9750 5850
+Connection ~ 9750 5850
+Wire Wire Line
+	7950 5850 8050 5850
+$Comp
+L tinyfc_core-cache:AO6802 Q2
+U 1 1 58EA2B23
+P 9250 4850
+F 0 "Q2" V 9200 4600 50  0000 L CNN
+F 1 "AO6802" V 9500 4700 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 9450 4775 50  0001 L CIN
+F 3 "" H 9250 4850 50  0000 L CNN
+	1    9250 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:AO6802 Q2
+U 2 1 58EA2C38
+P 9250 5400
+F 0 "Q2" V 9200 5150 50  0000 L CNN
+F 1 "AO6802" V 9450 5250 50  0000 L CNN
+F 2 "" H 9450 5325 50  0001 L CIN
+F 3 "" H 9250 5400 50  0000 L CNN
+	2    9250 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 5300 9050 5300
+$Comp
+L tinyfc_core-cache:R R29
+U 1 1 58EA4DE8
+P 9550 5450
+F 0 "R29" V 9630 5450 50  0000 C CNN
+F 1 "2.2K" V 9550 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9480 5450 50  0001 C CNN
+F 3 "" H 9550 5450 50  0000 C CNN
+	1    9550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R28
+U 1 1 58EA4FEA
+P 9550 4900
+F 0 "R28" V 9630 4900 50  0000 C CNN
+F 1 "2.2K" V 9550 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9480 4900 50  0001 C CNN
+F 3 "" H 9550 4900 50  0000 C CNN
+	1    9550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4750 8050 4750
+Wire Wire Line
+	8050 4750 8050 5300
+Connection ~ 8050 5850
+Wire Wire Line
+	8150 5300 8050 5300
+Connection ~ 8050 5300
+Wire Wire Line
+	9450 4750 9550 4750
+Connection ~ 9550 4750
+Wire Wire Line
+	9450 5300 9550 5300
+Connection ~ 9750 5300
+Connection ~ 9550 5300
+Wire Wire Line
+	9100 5600 9300 5600
+Connection ~ 9300 5600
+Wire Wire Line
+	9100 5050 9300 5050
+Connection ~ 9300 5050
+Text GLabel 9100 5050 0    47   Input ~ 0
+DIN2
+Text GLabel 9100 5600 0    47   Input ~ 0
+DIN1
+Wire Wire Line
+	8950 4750 9050 4750
+Text GLabel 7950 5850 0    47   Input ~ 0
+VIN_RAW
+Wire Wire Line
+	7650 1850 7750 1850
+Wire Wire Line
+	7450 1750 7750 1750
+Wire Wire Line
+	8050 2350 8050 2500
+Wire Wire Line
+	8050 2350 8450 2350
+Wire Wire Line
+	7650 2350 8050 2350
+Wire Wire Line
+	8050 1600 8050 1700
+Wire Wire Line
+	7650 3500 7750 3500
+Wire Wire Line
+	7450 3400 7750 3400
+Wire Wire Line
+	8050 4000 8050 4100
+Wire Wire Line
+	8050 4000 8400 4000
+Wire Wire Line
+	7650 4000 8050 4000
+Wire Wire Line
+	8050 3250 8050 3350
+Wire Wire Line
+	3400 3050 3400 3200
+Wire Wire Line
+	4000 3200 4150 3200
+Wire Wire Line
+	4000 3200 4000 3300
+Wire Wire Line
+	3850 3200 4000 3200
+Wire Wire Line
+	3850 3050 3850 3200
+Wire Wire Line
+	4100 2350 4300 2350
+Wire Wire Line
+	3400 3200 3450 3200
+Wire Wire Line
+	5000 2550 5100 2550
+Wire Wire Line
+	4900 2450 5100 2450
+Wire Wire Line
+	5050 4350 5250 4350
+Wire Wire Line
+	5050 4050 5250 4050
+Wire Wire Line
+	5350 4250 5950 4250
+Wire Wire Line
+	5550 4150 5950 4150
+Wire Wire Line
+	4100 5900 4100 6100
+Wire Wire Line
+	4100 5800 4100 5900
+Wire Wire Line
+	3700 5500 4200 5500
+Wire Wire Line
+	3900 5600 4200 5600
+Wire Wire Line
+	4100 6100 4100 6200
+Wire Wire Line
+	5750 6100 5750 6200
+Wire Wire Line
+	5750 5900 5750 6100
+Wire Wire Line
+	5750 5800 5750 5900
+Wire Wire Line
+	5550 5600 5850 5600
+Wire Wire Line
+	5350 5500 5850 5500
+Wire Wire Line
+	5450 4850 5450 4900
+Wire Wire Line
+	5800 7050 5800 7350
+Wire Wire Line
+	5600 7250 5600 7350
+Wire Wire Line
+	5150 7250 5400 7250
+Wire Wire Line
+	5150 6750 5400 6750
+Wire Wire Line
+	4950 6750 5150 6750
+Wire Wire Line
+	5400 7250 5600 7250
+Wire Wire Line
+	5400 6750 5550 6750
+Wire Wire Line
+	9750 5850 9750 5950
+Wire Wire Line
+	8050 5850 8400 5850
+Wire Wire Line
+	8050 5300 8050 5850
+Wire Wire Line
+	9550 4750 9750 4750
+Wire Wire Line
+	9750 5300 9750 5850
+Wire Wire Line
+	9550 5300 9750 5300
+Wire Wire Line
+	9300 5600 9550 5600
+Wire Wire Line
+	9300 5050 9550 5050
+$EndSCHEMATC

@@ -1,0 +1,520 @@
+EESchema Schematic File Version 4
+LIBS:tinyfc_core-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "DC-DC Converter"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tinyfc_core-cache:MP2162 U3
+U 1 1 58E349A2
+P 5850 2400
+F 0 "U3" H 5850 2700 47  0000 C CNN
+F 1 "MP2162" H 5850 2100 47  0000 C CNN
+F 2 "QFN_Ext:QFN8_2x1.5" H 5850 2400 47  0001 C CNN
+F 3 "" H 5850 2400 47  0000 C CNN
+	1    5850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C12
+U 1 1 58E34C0B
+P 4750 2600
+F 0 "C12" H 4775 2700 50  0000 L CNN
+F 1 "10uF" H 4775 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4788 2450 50  0001 C CNN
+F 3 "" H 4750 2600 50  0000 C CNN
+	1    4750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C16
+U 1 1 58E34C4F
+P 7250 2700
+F 0 "C16" H 7275 2800 50  0000 L CNN
+F 1 "10uF" H 7275 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7288 2550 50  0001 C CNN
+F 3 "" H 7250 2700 50  0000 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R6
+U 1 1 58E34D72
+P 6950 2450
+F 0 "R6" V 7030 2450 50  0000 C CNN
+F 1 "200K" V 6950 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6880 2450 50  0001 C CNN
+F 3 "" H 6950 2450 50  0000 C CNN
+	1    6950 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R5
+U 1 1 58E34DF6
+P 6700 2700
+F 0 "R5" V 6780 2700 50  0000 C CNN
+F 1 "44.2K" V 6700 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6630 2700 50  0001 C CNN
+F 3 "" H 6700 2700 50  0000 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:INDUCTOR-RESCUE-tinyfc_core L3
+U 1 1 58E34E1E
+P 6750 2250
+F 0 "L3" V 6700 2250 50  0000 C CNN
+F 1 "1.5uH" V 6850 2250 50  0000 C CNN
+F 2 "Inductor:VLS2520" H 6750 2250 50  0001 C CNN
+F 3 "" H 6750 2250 50  0000 C CNN
+	1    6750 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:+5V #PWR020
+U 1 1 58E3519D
+P 4750 1800
+F 0 "#PWR020" H 4750 1650 50  0001 C CNN
+F 1 "+5V" H 4750 1940 50  0000 C CNN
+F 2 "" H 4750 1800 50  0000 C CNN
+F 3 "" H 4750 1800 50  0000 C CNN
+	1    4750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:+3.3V #PWR021
+U 1 1 58E3564C
+P 7250 2100
+AR Path="/58E3564C" Ref="#PWR021"  Part="1" 
+AR Path="/58E1E407/58E3564C" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 7250 1950 50  0001 C CNN
+F 1 "+3.3V" H 7250 2240 50  0000 C CNN
+F 2 "" H 7250 2100 50  0000 C CNN
+F 3 "" H 7250 2100 50  0000 C CNN
+	1    7250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R3
+U 1 1 58E34CEF
+P 5100 2350
+F 0 "R3" V 5180 2350 50  0000 C CNN
+F 1 "200K" V 5100 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5030 2350 50  0001 C CNN
+F 3 "" H 5100 2350 50  0000 C CNN
+	1    5100 2350
+	0    1    1    0   
+$EndComp
+NoConn ~ 6350 2550
+$Comp
+L tinyfc_core-cache:C C7
+U 1 1 58E36CB0
+P 4150 5000
+F 0 "C7" H 4175 5100 50  0000 L CNN
+F 1 "4.7uF" H 4175 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4188 4850 50  0001 C CNN
+F 3 "" H 4150 5000 50  0000 C CNN
+	1    4150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C8
+U 1 1 58E36D6E
+P 4450 5000
+F 0 "C8" H 4475 5100 50  0000 L CNN
+F 1 "100nF" H 4475 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4488 4850 50  0001 C CNN
+F 3 "" H 4450 5000 50  0000 C CNN
+	1    4450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C9
+U 1 1 58E36F92
+P 4750 5000
+F 0 "C9" H 4775 5100 50  0000 L CNN
+F 1 "100nF" H 4775 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4788 4850 50  0001 C CNN
+F 3 "" H 4750 5000 50  0000 C CNN
+	1    4750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C10
+U 1 1 58E36FCA
+P 5050 5000
+F 0 "C10" H 5075 5100 50  0000 L CNN
+F 1 "100nF" H 5075 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5088 4850 50  0001 C CNN
+F 3 "" H 5050 5000 50  0000 C CNN
+	1    5050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C11
+U 1 1 58E37007
+P 5350 5000
+F 0 "C11" H 5375 5100 50  0000 L CNN
+F 1 "100nF" H 5375 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5388 4850 50  0001 C CNN
+F 3 "" H 5350 5000 50  0000 C CNN
+	1    5350 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C13
+U 1 1 58E37043
+P 5650 5000
+F 0 "C13" H 5675 5100 50  0000 L CNN
+F 1 "100nF" H 5675 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5688 4850 50  0001 C CNN
+F 3 "" H 5650 5000 50  0000 C CNN
+	1    5650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C14
+U 1 1 58E37086
+P 6450 5000
+F 0 "C14" H 6475 5100 50  0000 L CNN
+F 1 "100nF" H 6475 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6488 4850 50  0001 C CNN
+F 3 "" H 6450 5000 50  0000 C CNN
+	1    6450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:C C15
+U 1 1 58E37128
+P 6850 5000
+F 0 "C15" H 6875 5100 50  0000 L CNN
+F 1 "1uF" H 6875 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6888 4850 50  0001 C CNN
+F 3 "" H 6850 5000 50  0000 C CNN
+	1    6850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:R R4
+U 1 1 58E37199
+P 6050 5250
+F 0 "R4" V 6130 5250 50  0000 C CNN
+F 1 "0" V 6050 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5980 5250 50  0001 C CNN
+F 3 "" H 6050 5250 50  0000 C CNN
+	1    6050 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:INDUCTOR-RESCUE-tinyfc_core L2
+U 1 1 58E3731E
+P 6050 4750
+F 0 "L2" V 6000 4750 50  0000 C CNN
+F 1 "1K" V 6150 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6050 4750 50  0001 C CNN
+F 3 "" H 6050 4750 50  0000 C CNN
+	1    6050 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:GND #PWR023
+U 1 1 58E37744
+P 4150 5350
+F 0 "#PWR023" H 4150 5100 50  0001 C CNN
+F 1 "GND" H 4150 5200 50  0000 C CNN
+F 2 "" H 4150 5350 50  0000 C CNN
+F 3 "" H 4150 5350 50  0000 C CNN
+	1    4150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:+3.3V #PWR024
+U 1 1 58E37909
+P 4150 4650
+AR Path="/58E37909" Ref="#PWR024"  Part="1" 
+AR Path="/58E1E407/58E37909" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 4150 4500 50  0001 C CNN
+F 1 "+3.3V" H 4150 4790 50  0000 C CNN
+F 2 "" H 4150 4650 50  0000 C CNN
+F 3 "" H 4150 4650 50  0000 C CNN
+	1    4150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2450 5200 2450
+Wire Wire Line
+	5200 2450 5200 2550
+Wire Wire Line
+	4750 1800 4750 1950
+Wire Wire Line
+	4200 2250 4300 2250
+Wire Wire Line
+	4950 2350 4900 2350
+Wire Wire Line
+	4900 2350 4900 2250
+Connection ~ 4900 2250
+Wire Wire Line
+	6350 2450 6700 2450
+Wire Wire Line
+	6700 2550 6700 2450
+Connection ~ 6700 2450
+Wire Wire Line
+	6350 2250 6450 2250
+Wire Wire Line
+	7250 2350 6350 2350
+Wire Wire Line
+	7250 2100 7250 2250
+Wire Wire Line
+	7250 2250 7050 2250
+Wire Wire Line
+	7250 2450 7100 2450
+Connection ~ 7250 2350
+Wire Wire Line
+	4000 2950 4750 2950
+Wire Wire Line
+	7250 2850 7250 2950
+Connection ~ 7250 2450
+Connection ~ 7250 2250
+Wire Wire Line
+	6700 2850 6700 2950
+Connection ~ 6700 2950
+Wire Wire Line
+	5250 2350 5350 2350
+Wire Wire Line
+	4150 4650 4150 4750
+Wire Wire Line
+	4150 5150 4150 5250
+Wire Wire Line
+	4150 5250 4450 5250
+Connection ~ 4150 5250
+Wire Wire Line
+	4150 4750 4450 4750
+Connection ~ 4150 4750
+Wire Wire Line
+	4450 4850 4450 4750
+Connection ~ 4450 4750
+Wire Wire Line
+	4750 4850 4750 4750
+Connection ~ 4750 4750
+Wire Wire Line
+	4450 5150 4450 5250
+Connection ~ 4450 5250
+Wire Wire Line
+	4750 5150 4750 5250
+Connection ~ 4750 5250
+Wire Wire Line
+	5050 4850 5050 4750
+Connection ~ 5050 4750
+Wire Wire Line
+	5050 5150 5050 5250
+Connection ~ 5050 5250
+Wire Wire Line
+	5350 4850 5350 4750
+Connection ~ 5350 4750
+Wire Wire Line
+	5350 5150 5350 5250
+Connection ~ 5350 5250
+Wire Wire Line
+	5650 5150 5650 5250
+Connection ~ 5650 5250
+Wire Wire Line
+	5650 4850 5650 4750
+Connection ~ 5650 4750
+$Comp
+L tinyfc_core-cache:+3.3VADC #PWR025
+U 1 1 58E381EB
+P 6850 4650
+F 0 "#PWR025" H 7000 4600 50  0001 C CNN
+F 1 "+3.3VADC" H 6850 4750 50  0000 C CNN
+F 2 "" H 6850 4650 50  0000 C CNN
+F 3 "" H 6850 4650 50  0000 C CNN
+	1    6850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GNDA #PWR026
+U 1 1 58E38287
+P 6850 5350
+F 0 "#PWR026" H 6850 5100 50  0001 C CNN
+F 1 "GNDA" H 6850 5200 50  0000 C CNN
+F 2 "" H 6850 5350 50  0000 C CNN
+F 3 "" H 6850 5350 50  0000 C CNN
+	1    6850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5250 6450 5250
+Wire Wire Line
+	6850 5150 6850 5250
+Connection ~ 6850 5250
+Wire Wire Line
+	6450 5150 6450 5250
+Connection ~ 6450 5250
+Wire Wire Line
+	6350 4750 6450 4750
+Wire Wire Line
+	6850 4650 6850 4750
+Connection ~ 6850 4750
+Wire Wire Line
+	6450 4850 6450 4750
+Connection ~ 6450 4750
+Text GLabel 6400 2250 1    47   Input ~ 0
+V_SW
+$Comp
+L tinyfc_core-cache:Q_PMOS_GSD Q1
+U 1 1 58E9DFF1
+P 4000 2350
+F 0 "Q1" V 4150 2550 50  0000 R CNN
+F 1 "Q_PMOS_GSD" V 4150 2250 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4200 2450 50  0001 C CNN
+F 3 "" H 4000 2350 50  0000 C CNN
+	1    4000 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:D_Schottky_Small D5
+U 1 1 58E9E46D
+P 4300 2450
+F 0 "D5" H 4250 2350 50  0000 L CNN
+F 1 "BAT20J" H 4150 2550 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-323_HandSoldering" V 4300 2450 50  0001 C CNN
+F 3 "" V 4300 2450 50  0000 C CNN
+	1    4300 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:R R19
+U 1 1 58E9E661
+P 4000 2800
+F 0 "R19" V 4080 2800 50  0000 C CNN
+F 1 "4.7K" V 4000 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3930 2800 50  0001 C CNN
+F 3 "" H 4000 2800 50  0000 C CNN
+	1    4000 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 2550 4000 2600
+Wire Wire Line
+	4000 2600 4300 2600
+Wire Wire Line
+	4300 2600 4300 2550
+Connection ~ 4000 2600
+Wire Wire Line
+	4300 2250 4300 2350
+Connection ~ 4300 2250
+Wire Wire Line
+	3800 2250 3650 2250
+Text GLabel 3650 2250 0    47   Input ~ 0
+VIN_RAW
+$Comp
+L tinyfc_core-cache:D D6
+U 1 1 58EA5010
+P 4000 1950
+F 0 "D6" H 4000 2050 50  0000 C CNN
+F 1 "1A" H 4000 1850 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 4000 1950 50  0001 C CNN
+F 3 "" H 4000 1950 50  0000 C CNN
+	1    4000 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 1950 4750 1950
+Connection ~ 4750 1950
+Wire Wire Line
+	3850 1950 3650 1950
+Text GLabel 3650 1950 0    47   Input ~ 0
+USB_VBUS
+$Comp
+L tinyfc_core-cache:GND #PWR?
+U 1 1 5917E28F
+P 7250 3050
+F 0 "#PWR?" H 7250 2800 50  0001 C CNN
+F 1 "GND" H 7250 2900 50  0000 C CNN
+F 2 "" H 7250 3050 50  0000 C CNN
+F 3 "" H 7250 3050 50  0000 C CNN
+	1    7250 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 2950
+Wire Wire Line
+	4750 2750 4750 2950
+Connection ~ 4750 2950
+Connection ~ 5200 2950
+Wire Wire Line
+	5350 2550 5200 2550
+Connection ~ 5200 2550
+Connection ~ 4750 2250
+Wire Wire Line
+	4900 2250 5350 2250
+Wire Wire Line
+	6700 2450 6800 2450
+Wire Wire Line
+	7250 2350 7250 2450
+Wire Wire Line
+	7250 2450 7250 2550
+Wire Wire Line
+	7250 2250 7250 2350
+Wire Wire Line
+	6700 2950 7250 2950
+Wire Wire Line
+	4150 5250 4150 5350
+Wire Wire Line
+	4150 4750 4150 4850
+Wire Wire Line
+	4450 4750 4750 4750
+Wire Wire Line
+	4750 4750 5050 4750
+Wire Wire Line
+	4450 5250 4750 5250
+Wire Wire Line
+	4750 5250 5050 5250
+Wire Wire Line
+	5050 4750 5350 4750
+Wire Wire Line
+	5050 5250 5350 5250
+Wire Wire Line
+	5350 4750 5650 4750
+Wire Wire Line
+	5350 5250 5650 5250
+Wire Wire Line
+	5650 5250 5900 5250
+Wire Wire Line
+	5650 4750 5750 4750
+Wire Wire Line
+	6850 5250 6850 5350
+Wire Wire Line
+	6450 5250 6850 5250
+Wire Wire Line
+	6850 4750 6850 4850
+Wire Wire Line
+	6450 4750 6850 4750
+Wire Wire Line
+	4000 2600 4000 2650
+Wire Wire Line
+	4300 2250 4750 2250
+Wire Wire Line
+	4750 1950 4750 2250
+Wire Wire Line
+	7250 2950 7250 3050
+Wire Wire Line
+	4750 2950 5200 2950
+Wire Wire Line
+	5200 2950 6700 2950
+Wire Wire Line
+	5200 2550 5200 2950
+Wire Wire Line
+	4750 2250 4900 2250
+Wire Wire Line
+	4750 2250 4750 2450
+$EndSCHEMATC

@@ -1,0 +1,513 @@
+EESchema Schematic File Version 4
+LIBS:tinyfc_core-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "STM32F405 MCU"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tinyfc_core-cache:STM32F405RGTx U2
+U 1 1 58E1E4A1
+P 5900 3700
+F 0 "U2" H 1700 5625 50  0000 L BNN
+F 1 "STM32F405RGTx" H 10100 5625 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 10100 5575 50  0001 R TNN
+F 3 "" H 5900 3700 50  0000 C CNN
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2500 10350 2500
+Wire Wire Line
+	10200 2600 10350 2600
+Wire Wire Line
+	10200 2700 10350 2700
+Wire Wire Line
+	10200 2800 10350 2800
+Wire Wire Line
+	1600 4200 1450 4200
+Text GLabel 1450 4200 0    47   Input ~ 0
+IMU_INT
+Text GLabel 10350 2500 2    47   Input ~ 0
+IMU_CS
+Text GLabel 10350 2600 2    47   Input ~ 0
+IMU_SCK
+Text GLabel 10350 2700 2    47   Input ~ 0
+IMU_MISO
+Text GLabel 10350 2800 2    47   Input ~ 0
+IMU_MOSI
+$Comp
+L tinyfc_core-cache:+3.3V #PWR010
+U 1 1 58E3932D
+P 5700 1500
+AR Path="/58E3932D" Ref="#PWR010"  Part="1" 
+AR Path="/58E1E3E6/58E3932D" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 5700 1350 50  0001 C CNN
+F 1 "+3.3V" H 5700 1640 50  0000 C CNN
+F 2 "" H 5700 1500 50  0000 C CNN
+F 3 "" H 5700 1500 50  0000 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1500 5700 1600
+Wire Wire Line
+	5700 1600 5800 1600
+Wire Wire Line
+	6000 1600 6000 1700
+Connection ~ 5700 1600
+Wire Wire Line
+	5900 1700 5900 1600
+Connection ~ 5900 1600
+Wire Wire Line
+	5800 1700 5800 1600
+Connection ~ 5800 1600
+$Comp
+L tinyfc_core-cache:+3.3VADC #PWR011
+U 1 1 58E39371
+P 6100 1450
+F 0 "#PWR011" H 6250 1400 50  0001 C CNN
+F 1 "+3.3VADC" H 6100 1550 50  0000 C CNN
+F 2 "" H 6100 1450 50  0000 C CNN
+F 3 "" H 6100 1450 50  0000 C CNN
+	1    6100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1450 6100 1700
+$Comp
+L tinyfc_core-cache:+3.3V #PWR012
+U 1 1 58E393B3
+P 1450 2500
+AR Path="/58E393B3" Ref="#PWR012"  Part="1" 
+AR Path="/58E1E3E6/58E393B3" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 1450 2350 50  0001 C CNN
+F 1 "+3.3V" H 1450 2640 50  0000 C CNN
+F 2 "" H 1450 2500 50  0000 C CNN
+F 3 "" H 1450 2500 50  0000 C CNN
+	1    1450 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 2500 1600 2500
+$Comp
+L tinyfc_core-cache:GND #PWR013
+U 1 1 58E393FF
+P 5800 5900
+F 0 "#PWR013" H 5800 5650 50  0001 C CNN
+F 1 "GND" H 5800 5750 50  0000 C CNN
+F 2 "" H 5800 5900 50  0000 C CNN
+F 3 "" H 5800 5900 50  0000 C CNN
+	1    5800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinyfc_core-cache:GNDA #PWR014
+U 1 1 58E39415
+P 6000 5900
+F 0 "#PWR014" H 6000 5650 50  0001 C CNN
+F 1 "GNDA" H 6000 5750 50  0000 C CNN
+F 2 "" H 6000 5900 50  0000 C CNN
+F 3 "" H 6000 5900 50  0000 C CNN
+	1    6000 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5700 5800 5800
+Wire Wire Line
+	5800 5800 5900 5800
+Wire Wire Line
+	5900 5800 5900 5700
+Connection ~ 5800 5800
+Wire Wire Line
+	6000 5700 6000 5900
+$Comp
+L tinyfc_core-cache:Resonators3Pin X1
+U 1 1 58E39595
+P 1200 3250
+F 0 "X1" H 1300 3400 47  0000 C CNN
+F 1 "25MHz" H 1350 3100 47  0000 C CNN
+F 2 "MurataResonators:CERALOCK-CSTCW" H 1200 3250 47  0001 C CNN
+F 3 "" H 1200 3250 47  0001 C CNN
+	1    1200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3400 1500 3400
+Wire Wire Line
+	1500 3400 1500 3450
+Wire Wire Line
+	1500 3450 1200 3450
+Wire Wire Line
+	1600 3300 1500 3300
+Wire Wire Line
+	1500 3300 1500 3050
+Wire Wire Line
+	1500 3050 1200 3050
+$Comp
+L tinyfc_core-cache:GND #PWR015
+U 1 1 58E39699
+P 800 3250
+F 0 "#PWR015" H 800 3000 50  0001 C CNN
+F 1 "GND" H 800 3100 50  0000 C CNN
+F 2 "" H 800 3250 50  0000 C CNN
+F 3 "" H 800 3250 50  0000 C CNN
+	1    800  3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	800  3250 850  3250
+$Comp
+L tinyfc_core-cache:C C5
+U 1 1 58E396DB
+P 1100 2600
+F 0 "C5" H 1125 2700 50  0000 L CNN
+F 1 "2.2uF" H 1125 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1138 2450 50  0001 C CNN
+F 3 "" H 1100 2600 50  0000 C CNN
+	1    1100 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L tinyfc_core-cache:C C6
+U 1 1 58E39721
+P 1100 2900
+F 0 "C6" H 1125 3000 50  0000 L CNN
+F 1 "2.2uF" H 1125 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1138 2750 50  0001 C CNN
+F 3 "" H 1100 2900 50  0000 C CNN
+	1    1100 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 2600 1600 2600
+Wire Wire Line
+	1600 2700 1400 2700
+Wire Wire Line
+	1400 2700 1400 2900
+Wire Wire Line
+	1400 2900 1250 2900
+Wire Wire Line
+	850  2900 950  2900
+Wire Wire Line
+	850  2100 850  2300
+Connection ~ 850  3250
+Wire Wire Line
+	950  2600 850  2600
+Connection ~ 850  2900
+$Comp
+L tinyfc_core-cache:C C4
+U 1 1 58E398F4
+P 1100 2100
+F 0 "C4" H 1125 2200 50  0000 L CNN
+F 1 "100nF" H 1125 2000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1138 1950 50  0001 C CNN
+F 3 "" H 1100 2100 50  0000 C CNN
+	1    1100 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 850  2600
+Wire Wire Line
+	950  2100 850  2100
+Wire Wire Line
+	1250 2100 1600 2100
+$Comp
+L tinyfc_core-cache:R R1
+U 1 1 58E399F7
+P 1100 2300
+F 0 "R1" V 1180 2300 50  0000 C CNN
+F 1 "10K" V 1100 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1030 2300 50  0001 C CNN
+F 3 "" H 1100 2300 50  0000 C CNN
+	1    1100 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  2300 850  2300
+Connection ~ 850  2300
+Wire Wire Line
+	1250 2300 1600 2300
+$Comp
+L tinyfc_core-cache:R R2
+U 1 1 58E39D5A
+P 10750 4000
+F 0 "R2" V 10830 4000 50  0000 C CNN
+F 1 "10K" V 10750 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10680 4000 50  0001 C CNN
+F 3 "" H 10750 4000 50  0000 C CNN
+	1    10750 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10600 4000 10200 4000
+$Comp
+L tinyfc_core-cache:GND #PWR016
+U 1 1 58E39F77
+P 10950 4000
+F 0 "#PWR016" H 10950 3750 50  0001 C CNN
+F 1 "GND" H 10950 3850 50  0000 C CNN
+F 2 "" H 10950 4000 50  0000 C CNN
+F 3 "" H 10950 4000 50  0000 C CNN
+	1    10950 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10950 4000 10900 4000
+Wire Wire Line
+	1600 3600 1450 3600
+Wire Wire Line
+	1600 3800 1450 3800
+Wire Wire Line
+	1600 3900 1450 3900
+Wire Wire Line
+	1600 4000 1450 4000
+Wire Wire Line
+	1600 4100 1450 4100
+Wire Wire Line
+	1600 4300 1450 4300
+Wire Wire Line
+	1600 4400 1450 4400
+Wire Wire Line
+	1600 4500 1450 4500
+Wire Wire Line
+	1600 4600 1450 4600
+Wire Wire Line
+	1600 4700 1450 4700
+Wire Wire Line
+	1600 4800 1450 4800
+Wire Wire Line
+	1600 4900 1450 4900
+Wire Wire Line
+	1600 5000 1450 5000
+Wire Wire Line
+	10200 2100 10350 2100
+Wire Wire Line
+	10200 2200 10350 2200
+Wire Wire Line
+	10200 2300 10350 2300
+Wire Wire Line
+	10200 2400 10350 2400
+Wire Wire Line
+	10200 2900 10350 2900
+Wire Wire Line
+	10200 3000 10350 3000
+Wire Wire Line
+	10200 3100 10350 3100
+Wire Wire Line
+	10200 3200 10350 3200
+Wire Wire Line
+	10200 3300 10350 3300
+Wire Wire Line
+	10200 3400 10350 3400
+Wire Wire Line
+	10200 3500 10350 3500
+Wire Wire Line
+	10200 3800 10350 3800
+Wire Wire Line
+	10200 3900 10350 3900
+Wire Wire Line
+	10200 4100 10350 4100
+Wire Wire Line
+	10200 4200 10350 4200
+Wire Wire Line
+	10200 4300 10350 4300
+Wire Wire Line
+	10200 4400 10350 4400
+Wire Wire Line
+	10200 4500 10350 4500
+Wire Wire Line
+	10200 4600 10350 4600
+Wire Wire Line
+	10200 4700 10350 4700
+Wire Wire Line
+	10200 4800 10350 4800
+Wire Wire Line
+	10200 4900 10350 4900
+Wire Wire Line
+	10200 5000 10350 5000
+Wire Wire Line
+	10200 5100 10350 5100
+Wire Wire Line
+	10200 5200 10350 5200
+Wire Wire Line
+	10200 5300 10350 5300
+Text GLabel 1450 3600 0    47   Input ~ 0
+SDIO_CMD
+Text GLabel 1450 3800 0    47   Input ~ 0
+ADC1_IN10
+Text GLabel 1450 3900 0    47   Input ~ 0
+ADC1_IN11
+Text GLabel 1450 4000 0    47   Input ~ 0
+ADC1_IN12
+Text GLabel 1450 4100 0    47   Input ~ 0
+ADC1_IN13
+Text GLabel 1450 4300 0    47   Input ~ 0
+LED1
+Text GLabel 1450 4400 0    47   Input ~ 0
+U6TX
+Text GLabel 1450 4500 0    47   Input ~ 0
+U6RX
+Text GLabel 1450 4600 0    47   Input ~ 0
+SDIO_D0
+Text GLabel 1450 4700 0    47   Input ~ 0
+SDIO_D1
+Text GLabel 1450 4800 0    47   Input ~ 0
+SDIO_D2
+Text GLabel 1450 4900 0    47   Input ~ 0
+SDIO_D3
+Text GLabel 1450 5000 0    47   Input ~ 0
+SDIO_CK
+Text GLabel 10350 3400 2    47   Input ~ 0
+JTMS
+Text GLabel 10350 3500 2    47   Input ~ 0
+JTCK
+Text GLabel 10350 4100 2    47   Input ~ 0
+JTDO
+Text GLabel 10350 2100 2    47   Input ~ 0
+U4TX
+Text GLabel 10350 2200 2    47   Input ~ 0
+U4RX
+Text GLabel 10350 2300 2    47   Input ~ 0
+U2TX
+Text GLabel 10350 2400 2    47   Input ~ 0
+U2RX
+Text GLabel 10350 2900 2    47   Input ~ 0
+SD_DECT
+Text GLabel 10350 3000 2    47   Input ~ 0
+U1TX
+Text GLabel 10350 3100 2    47   Input ~ 0
+U1RX
+Text GLabel 10350 3200 2    47   Input ~ 0
+USBDM
+Text GLabel 10350 3300 2    47   Input ~ 0
+USBDP
+Text GLabel 10350 3800 2    47   Input ~ 0
+T3C3
+Text GLabel 10350 3900 2    47   Input ~ 0
+T3C4
+Text GLabel 10350 4200 2    47   Input ~ 0
+T3C1
+Text GLabel 10350 4300 2    47   Input ~ 0
+T3C2
+Text GLabel 10350 4400 2    47   Input ~ 0
+T4C1
+Text GLabel 10350 4500 2    47   Input ~ 0
+T4C2
+Text GLabel 10350 4600 2    47   Input ~ 0
+CAN1_RX
+Text GLabel 10350 4700 2    47   Input ~ 0
+CAN1_TX
+Text GLabel 10350 4800 2    47   Input ~ 0
+IMU_SCL
+Text GLabel 10350 4900 2    47   Input ~ 0
+IMU_SDA
+Text GLabel 10350 5000 2    47   Input ~ 0
+LED2
+Text GLabel 10350 5100 2    47   Input ~ 0
+LED3
+Text GLabel 10350 5200 2    47   Input ~ 0
+T12C1
+Text GLabel 10350 5300 2    47   Input ~ 0
+T12C2
+Wire Wire Line
+	1600 5100 1450 5100
+Wire Wire Line
+	1600 5200 1450 5200
+Wire Wire Line
+	1600 5300 1450 5300
+Text GLabel 1450 5100 0    47   Input ~ 0
+DIN1
+Text GLabel 1450 5200 0    47   Input ~ 0
+DIN2
+Text GLabel 1450 5300 0    47   Input ~ 0
+DIN3
+Wire Wire Line
+	10200 3600 10350 3600
+Text GLabel 10350 3600 2    47   Input ~ 0
+JTDI
+$Comp
+L tinyfc_core-cache:TEST_1P W2
+U 1 1 58EB7C7D
+P 2050 6500
+F 0 "W2" H 2050 6770 50  0000 C CNN
+F 1 "TEST_1P" H 2050 6700 50  0000 C CNN
+F 2 "PCB_Misc:TESTPAD_SMALL" H 2250 6500 50  0001 C CNN
+F 3 "" H 2250 6500 50  0000 C CNN
+	1    2050 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:TEST_1P W3
+U 1 1 58EB8177
+P 3150 6100
+F 0 "W3" H 3150 6370 50  0000 C CNN
+F 1 "TEST_1P" H 3150 6300 50  0000 C CNN
+F 2 "PCB_Misc:TESTPAD_SMALL" H 3350 6100 50  0001 C CNN
+F 3 "" H 3350 6100 50  0000 C CNN
+	1    3150 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:TEST_1P W4
+U 1 1 58EB81DD
+P 3150 6500
+F 0 "W4" H 3150 6770 50  0000 C CNN
+F 1 "TEST_1P" H 3150 6700 50  0000 C CNN
+F 2 "PCB_Misc:TESTPAD_SMALL" H 3350 6500 50  0001 C CNN
+F 3 "" H 3350 6500 50  0000 C CNN
+	1    3150 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinyfc_core-cache:TEST_1P W1
+U 1 1 58EB8219
+P 2050 6100
+F 0 "W1" H 2050 6370 50  0000 C CNN
+F 1 "TEST_1P" H 2050 6300 50  0000 C CNN
+F 2 "PCB_Misc:TESTPAD_SMALL" H 2250 6100 50  0001 C CNN
+F 3 "" H 2250 6100 50  0000 C CNN
+	1    2050 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 6100 2200 6100
+Wire Wire Line
+	2050 6500 2200 6500
+Wire Wire Line
+	3150 6100 3300 6100
+Wire Wire Line
+	3150 6500 3300 6500
+Text GLabel 2200 6100 2    47   Input ~ 0
+JTCK
+Text GLabel 2200 6500 2    47   Input ~ 0
+JTMS
+Text GLabel 3300 6100 2    47   Input ~ 0
+JTDO
+Text GLabel 3300 6500 2    47   Input ~ 0
+JTDI
+Wire Wire Line
+	5700 1600 5700 1700
+Wire Wire Line
+	5900 1600 6000 1600
+Wire Wire Line
+	5800 1600 5900 1600
+Wire Wire Line
+	5800 5800 5800 5900
+Wire Wire Line
+	850  3250 900  3250
+Wire Wire Line
+	850  2900 850  3250
+Wire Wire Line
+	850  2600 850  2900
+Wire Wire Line
+	850  2300 850  2600
+$EndSCHEMATC
