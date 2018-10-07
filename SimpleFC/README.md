@@ -1,7 +1,7 @@
 # SimpleFC
 SimpleFC is a simple flight controller for drones.
 
-Features:
+## Features
 
 - STM32F4 MCU with FPU
 - 10DoF IMU (Gyro + Accel + Mag + Baro)
@@ -13,3 +13,15 @@ Features:
 - EEPROM to store parameters.
 - CAN Bus support.
 - USB and SWD available.
+
+## 3D preview and photo
+Some 3D models are missing in the KiCAD render, refer to the "real word render" for more details.
+
+Front
+![](3D/front.jpg)
+
+Back
+![](3D/back.jpg)
+
+Photo
+![](3D/photo.jpg)
