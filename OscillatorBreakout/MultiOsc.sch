@@ -1,0 +1,386 @@
+EESchema Schematic File Version 4
+LIBS:MultiOsc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Oscillator Breakout"
+Date ""
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:TPS793333-EP U1
+U 1 1 5AF9974F
+P 3400 2500
+F 0 "U1" H 3400 2750 50  0000 C CNN
+F 1 "TPS79333" H 3600 2250 50  0000 C CNN
+F 2 "STD_SMD:SOT-23-5" H 3400 2825 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps79333-ep.pdf" H 3400 2550 50  0001 C CNN
+	1    3400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5AF997D1
+P 2900 1950
+F 0 "#PWR0101" H 2900 1800 50  0001 C CNN
+F 1 "+5V" H 2915 2123 50  0000 C CNN
+F 2 "" H 2900 1950 50  0001 C CNN
+F 3 "" H 2900 1950 50  0001 C CNN
+	1    2900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5AF9981F
+P 4350 1900
+F 0 "#PWR0102" H 4350 1750 50  0001 C CNN
+F 1 "+3V3" H 4365 2073 50  0000 C CNN
+F 2 "" H 4350 1900 50  0001 C CNN
+F 3 "" H 4350 1900 50  0001 C CNN
+	1    4350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5AF99851
+P 3950 2800
+F 0 "C2" H 4065 2846 50  0000 L CNN
+F 1 "10nF" H 4065 2755 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 3988 2650 50  0001 C CNN
+F 3 "~" H 3950 2800 50  0001 C CNN
+	1    3950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5AF99916
+P 4350 3150
+F 0 "#PWR0103" H 4350 2900 50  0001 C CNN
+F 1 "GND" H 4355 2977 50  0000 C CNN
+F 2 "" H 4350 3150 50  0001 C CNN
+F 3 "" H 4350 3150 50  0001 C CNN
+	1    4350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5AF99989
+P 3800 2100
+F 0 "L1" V 3850 2100 50  0000 C CNN
+F 1 "DNP" V 3750 2100 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" H 3800 2100 50  0001 C CNN
+F 3 "~" H 3800 2100 50  0001 C CNN
+	1    3800 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Oscillator:CXO_DIP14 X1
+U 1 1 5AF99D03
+P 5800 2300
+F 0 "X1" H 5850 2550 50  0000 L CNN
+F 1 "CXO_DIP14" H 5850 2050 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 6250 1950 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 5700 2300 50  0001 C CNN
+	1    5800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Oscillator:SG-8002CE X3
+U 1 1 5AF9A112
+P 5800 5650
+F 0 "X3" H 5850 5900 50  0000 L CNN
+F 1 "CXO_3225" H 5850 5400 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm_HandSoldering" H 6500 5300 50  0001 C CNN
+F 3 "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC" H 5700 5650 50  0001 C CNN
+	1    5800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5AF9A269
+P 5800 2700
+F 0 "#PWR0104" H 5800 2450 50  0001 C CNN
+F 1 "GND" H 5805 2527 50  0000 C CNN
+F 2 "" H 5800 2700 50  0001 C CNN
+F 3 "" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5AF9A43B
+P 5800 6050
+F 0 "#PWR0106" H 5800 5800 50  0001 C CNN
+F 1 "GND" H 5805 5877 50  0000 C CNN
+F 2 "" H 5800 6050 50  0001 C CNN
+F 3 "" H 5800 6050 50  0001 C CNN
+	1    5800 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6050 5800 5950
+Wire Wire Line
+	5800 2700 5800 2600
+Wire Wire Line
+	6100 2300 6900 2300
+Wire Wire Line
+	6900 2300 6900 3900
+Wire Wire Line
+	6100 5650 6900 5650
+Wire Wire Line
+	6900 5650 6900 3900
+$Comp
+L power:GND #PWR0107
+U 1 1 5AF9AB1D
+P 8550 4350
+F 0 "#PWR0107" H 8550 4100 50  0001 C CNN
+F 1 "GND" H 8555 4177 50  0000 C CNN
+F 2 "" H 8550 4350 50  0001 C CNN
+F 3 "" H 8550 4350 50  0001 C CNN
+	1    8550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5AF9ACED
+P 7650 3900
+F 0 "R1" V 7550 3900 50  0000 C CNN
+F 1 "0" V 7650 3900 50  0000 C CNN
+F 2 "STD_SMD:R_0402" V 7580 3900 50  0001 C CNN
+F 3 "~" H 7650 3900 50  0001 C CNN
+	1    7650 3900
+	0    1    1    0   
+$EndComp
+Connection ~ 6900 3900
+Wire Wire Line
+	7800 3900 8350 3900
+Wire Wire Line
+	3700 2500 3950 2500
+Wire Wire Line
+	3950 2500 3950 2650
+Wire Wire Line
+	3100 2400 2900 2400
+Wire Wire Line
+	2900 2400 2900 2100
+Wire Wire Line
+	3100 2500 2900 2500
+Wire Wire Line
+	2900 2500 2900 2400
+Connection ~ 2900 2400
+Wire Wire Line
+	3400 2800 3400 3050
+Wire Wire Line
+	3400 3050 2900 3050
+Wire Wire Line
+	3400 3050 3950 3050
+Wire Wire Line
+	3950 3050 3950 2950
+Connection ~ 3400 3050
+Wire Wire Line
+	3700 2400 4350 2400
+Wire Wire Line
+	4350 2400 4350 2100
+Wire Wire Line
+	3650 2100 2900 2100
+Connection ~ 2900 2100
+Wire Wire Line
+	2900 2100 2900 1950
+Wire Wire Line
+	3950 2100 4350 2100
+Connection ~ 4350 2100
+Wire Wire Line
+	4350 2100 4350 1900
+$Comp
+L Device:C C1
+U 1 1 5AF9C811
+P 2900 2800
+F 0 "C1" H 3015 2846 50  0000 L CNN
+F 1 "100nF" H 3015 2755 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 2938 2650 50  0001 C CNN
+F 3 "~" H 2900 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5AF9C841
+P 4350 2800
+F 0 "C3" H 4465 2846 50  0000 L CNN
+F 1 "2.2uF" H 4465 2755 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 4388 2650 50  0001 C CNN
+F 3 "~" H 4350 2800 50  0001 C CNN
+	1    4350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2650 2900 2500
+Connection ~ 2900 2500
+Wire Wire Line
+	2900 2950 2900 3050
+Connection ~ 2900 3050
+Wire Wire Line
+	3950 3050 4350 3050
+Wire Wire Line
+	4350 3050 4350 2950
+Connection ~ 3950 3050
+Wire Wire Line
+	4350 2400 4350 2650
+Connection ~ 4350 2400
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5AF9E702
+P 5800 1900
+F 0 "#PWR0108" H 5800 1750 50  0001 C CNN
+F 1 "+3V3" H 5815 2073 50  0000 C CNN
+F 2 "" H 5800 1900 50  0001 C CNN
+F 3 "" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1900 5800 2000
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 5AF9F2FD
+P 5800 5150
+F 0 "#PWR0110" H 5800 5000 50  0001 C CNN
+F 1 "+3V3" H 5815 5323 50  0000 C CNN
+F 2 "" H 5800 5150 50  0001 C CNN
+F 3 "" H 5800 5150 50  0001 C CNN
+	1    5800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5150 5800 5250
+Wire Wire Line
+	5500 2300 5400 2300
+Wire Wire Line
+	5400 5650 5500 5650
+Wire Wire Line
+	5400 2300 5400 3900
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5AFA135C
+P 1900 3800
+F 0 "J2" H 1820 4117 50  0000 C CNN
+F 1 "M03" H 1820 4026 50  0000 C CNN
+F 2 "ConnectorExt:M03" H 1900 3800 50  0001 C CNN
+F 3 "~" H 1900 3800 50  0001 C CNN
+	1    1900 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2100 2450 2100
+Wire Wire Line
+	2100 3700 2450 3700
+Wire Wire Line
+	2100 3800 2600 3800
+Wire Wire Line
+	2600 3050 2900 3050
+Wire Wire Line
+	2100 3900 5400 3900
+Connection ~ 5400 3900
+$Comp
+L Oscillator:CXO_DIP8 X2
+U 1 1 5AFA595C
+P 5850 3900
+F 0 "X2" H 5900 4150 50  0000 L CNN
+F 1 "CXO_DIP8" H 5900 3650 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-8" H 6300 3550 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 5750 3900 50  0001 C CNN
+	1    5850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3900 5400 3900
+Wire Wire Line
+	5400 3900 5400 5650
+$Comp
+L power:GND #PWR0105
+U 1 1 5AFA6F60
+P 5850 4300
+F 0 "#PWR0105" H 5850 4050 50  0001 C CNN
+F 1 "GND" H 5855 4127 50  0000 C CNN
+F 2 "" H 5850 4300 50  0001 C CNN
+F 3 "" H 5850 4300 50  0001 C CNN
+	1    5850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4300 5850 4200
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 5AFA7B5C
+P 5850 3500
+F 0 "#PWR0109" H 5850 3350 50  0001 C CNN
+F 1 "+3V3" H 5865 3673 50  0000 C CNN
+F 2 "" H 5850 3500 50  0001 C CNN
+F 3 "" H 5850 3500 50  0001 C CNN
+	1    5850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3500 5850 3600
+$Comp
+L Device:C C4
+U 1 1 5AFA97A0
+P 6150 5250
+F 0 "C4" V 5898 5250 50  0000 C CNN
+F 1 "100nF" V 5989 5250 50  0000 C CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 6188 5100 50  0001 C CNN
+F 3 "~" H 6150 5250 50  0001 C CNN
+	1    6150 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 5250 6000 5250
+Connection ~ 5800 5250
+Wire Wire Line
+	5800 5250 5800 5350
+$Comp
+L power:GND #PWR01
+U 1 1 5AFAAF98
+P 6400 5250
+F 0 "#PWR01" H 6400 5000 50  0001 C CNN
+F 1 "GND" V 6405 5122 50  0000 R CNN
+F 2 "" H 6400 5250 50  0001 C CNN
+F 3 "" H 6400 5250 50  0001 C CNN
+	1    6400 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 5250 6300 5250
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5BB94C1D
+P 8550 3900
+F 0 "J1" H 8649 3876 50  0000 L CNN
+F 1 "SMA_EDGE" H 8649 3785 50  0000 L CNN
+F 2 "RF_Devices:SMA_EDGE" H 8550 3900 50  0001 C CNN
+F 3 " ~" H 8550 3900 50  0001 C CNN
+	1    8550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4100 8550 4350
+Wire Wire Line
+	6900 3900 6150 3900
+Wire Wire Line
+	6900 3900 7500 3900
+Wire Wire Line
+	2600 3800 2600 3050
+Wire Wire Line
+	2450 3700 2450 2100
+Wire Wire Line
+	4350 3150 4350 3050
+Connection ~ 4350 3050
+Text Label 2200 3900 0    50   ~ 0
+CTRL
+$EndSCHEMATC
