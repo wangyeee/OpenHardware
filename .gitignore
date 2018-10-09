@@ -22,15 +22,16 @@ eagle.epf
 *.sts
 *.crc
 *.crs
-
 *.dri
 *.drl
 *.gpi
 *.pls
-
 *.drd
 *.drd.*
-
 *.info
-
 *.eps
+
+# KiCAD ignore list
+*.net
+*.bak
+*.kicad_pcb-bak
