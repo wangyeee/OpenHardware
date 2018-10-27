@@ -1,0 +1,464 @@
+EESchema Schematic File Version 4
+LIBS:ReflowOvenController-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Power Supply"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ReflowOvenController-cache:CONN_01X02 J1
+U 1 1 59A80AF7
+P 2700 2250
+F 0 "J1" H 2700 2400 50  0000 C CNN
+F 1 "CONN_01X02" V 2800 2250 50  0000 C CNN
+F 2 "Connector:MKDS3-2-5.08" H 2700 2250 50  0001 C CNN
+F 3 "" H 2700 2250 50  0001 C CNN
+	1    2700 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L ReflowOvenController-cache:Fuse F1
+U 1 1 59A80B3B
+P 3250 2200
+F 0 "F1" V 3330 2200 50  0000 C CNN
+F 1 "1A" V 3175 2200 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" V 3180 2200 50  0001 C CNN
+F 3 "" H 3250 2200 50  0001 C CNN
+	1    3250 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2200 3100 2200
+$Comp
+L ReflowOvenController-cache:1N4001 D1
+U 1 1 59A80D35
+P 4100 2250
+F 0 "D1" H 4100 2350 50  0000 C CNN
+F 1 "1N4001" H 4100 2150 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4100 2075 50  0001 C CNN
+F 3 "" H 4100 2250 50  0001 C CNN
+	1    4100 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:1N4001 D3
+U 1 1 59A80D91
+P 4100 2850
+F 0 "D3" H 4100 2950 50  0000 C CNN
+F 1 "1N4001" H 4100 2750 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4100 2675 50  0001 C CNN
+F 3 "" H 4100 2850 50  0001 C CNN
+	1    4100 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:1N4001 D2
+U 1 1 59A80DD3
+P 4450 2250
+F 0 "D2" H 4450 2350 50  0000 C CNN
+F 1 "1N4001" H 4450 2150 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4450 2075 50  0001 C CNN
+F 3 "" H 4450 2250 50  0001 C CNN
+	1    4450 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:1N4001 D4
+U 1 1 59A80E08
+P 4450 2850
+F 0 "D4" H 4450 2950 50  0000 C CNN
+F 1 "1N4001" H 4450 2750 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4450 2675 50  0001 C CNN
+F 3 "" H 4450 2850 50  0001 C CNN
+	1    4450 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 2300 2900 2300
+$Comp
+L ReflowOvenController-cache:GND #PWR024
+U 1 1 59A811CA
+P 4100 3350
+F 0 "#PWR024" H 4100 3100 50  0001 C CNN
+F 1 "GND" H 4100 3200 50  0000 C CNN
+F 2 "" H 4100 3350 50  0001 C CNN
+F 3 "" H 4100 3350 50  0001 C CNN
+	1    4100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:CP C9
+U 1 1 59A8137C
+P 4800 2550
+F 0 "C9" H 4825 2650 50  0000 L CNN
+F 1 "470uF" H 4825 2450 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 4838 2400 50  0001 C CNN
+F 3 "" H 4800 2550 50  0001 C CNN
+	1    4800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2200 3600 2200
+Wire Wire Line
+	3600 2200 3600 2500
+Wire Wire Line
+	3600 2500 4100 2500
+Wire Wire Line
+	4100 2400 4100 2500
+Connection ~ 4100 2500
+Wire Wire Line
+	4450 2400 4450 2600
+Wire Wire Line
+	4450 2600 3050 2600
+Wire Wire Line
+	3050 2600 3050 2300
+Connection ~ 4450 2600
+Wire Wire Line
+	4100 3000 4100 3250
+Wire Wire Line
+	4100 3250 4450 3250
+Wire Wire Line
+	4800 3250 4800 2700
+Connection ~ 4100 3250
+Wire Wire Line
+	4450 3250 4450 3000
+Connection ~ 4450 3250
+Wire Wire Line
+	4100 2100 4100 2000
+Wire Wire Line
+	4100 2000 4450 2000
+Wire Wire Line
+	4800 2000 4800 2400
+Wire Wire Line
+	4450 2100 4450 2000
+Connection ~ 4450 2000
+$Comp
+L ReflowOvenController-cache:C C10
+U 1 1 59A81A39
+P 5300 2550
+F 0 "C10" H 5325 2650 50  0000 L CNN
+F 1 "22uF" H 5325 2450 50  0000 L CNN
+F 2 "STD_SMD:C_1206_HandSoldering" H 5338 2400 50  0001 C CNN
+F 3 "" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C11
+U 1 1 59A81A70
+P 5550 2550
+F 0 "C11" H 5575 2650 50  0000 L CNN
+F 1 "100nF" H 5575 2450 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 5588 2400 50  0001 C CNN
+F 3 "" H 5550 2550 50  0001 C CNN
+	1    5550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:MP1470 U5
+U 1 1 59A81AA3
+P 6700 2550
+F 0 "U5" H 6650 2850 60  0000 C CNN
+F 1 "MP1470" H 6700 2250 60  0000 C CNN
+F 2 "dc-dc:TSOT23-6" H 6650 2000 60  0001 C CNN
+F 3 "" H 6700 2550 60  0001 C CNN
+	1    6700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R4
+U 1 1 59A81ADE
+P 6000 2550
+F 0 "R4" V 6080 2550 50  0000 C CNN
+F 1 "100K" V 6000 2550 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 5930 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 2350 6250 2350
+Connection ~ 4800 2000
+Wire Wire Line
+	5750 2550 5850 2550
+Wire Wire Line
+	5750 2000 5750 2350
+Connection ~ 5750 2350
+Wire Wire Line
+	6150 2550 6250 2550
+Connection ~ 4800 3250
+Wire Wire Line
+	5550 2400 5550 2000
+Connection ~ 5550 2000
+Wire Wire Line
+	5300 2400 5300 2000
+Connection ~ 5300 2000
+Wire Wire Line
+	5300 3250 5300 2700
+Wire Wire Line
+	5550 3250 5550 2700
+Connection ~ 5300 3250
+Connection ~ 5550 3250
+$Comp
+L ReflowOvenController-cache:C C12
+U 1 1 59A821C4
+P 7400 2550
+F 0 "C12" H 7425 2650 50  0000 L CNN
+F 1 "1uF" H 7425 2450 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 7438 2400 50  0001 C CNN
+F 3 "" H 7400 2550 50  0001 C CNN
+	1    7400 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 2550 7250 2550
+Wire Wire Line
+	7150 2350 7650 2350
+Wire Wire Line
+	7650 2350 7650 2550
+Wire Wire Line
+	7550 2550 7650 2550
+$Comp
+L ReflowOvenController-cache:L L2
+U 1 1 59A82326
+P 7900 2550
+F 0 "L2" V 7850 2550 50  0000 C CNN
+F 1 "6.8uH" V 7975 2550 50  0000 C CNN
+F 2 "Choke_SMD:Choke_SMD_Taiyo_NRS50XX-Handsoldering" H 7900 2550 50  0001 C CNN
+F 3 "" H 7900 2550 50  0001 C CNN
+	1    7900 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7650 2550
+$Comp
+L ReflowOvenController-cache:R R5
+U 1 1 59A823D7
+P 7400 2750
+F 0 "R5" V 7480 2750 50  0000 C CNN
+F 1 "75K" V 7400 2750 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 7330 2750 50  0001 C CNN
+F 3 "" H 7400 2750 50  0001 C CNN
+	1    7400 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R6
+U 1 1 59A82495
+P 7900 2750
+F 0 "R6" V 7980 2750 50  0000 C CNN
+F 1 "40.2K" V 7900 2750 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 7830 2750 50  0001 C CNN
+F 3 "" H 7900 2750 50  0001 C CNN
+	1    7900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R7
+U 1 1 59A824EE
+P 7650 3000
+F 0 "R7" V 7730 3000 50  0000 C CNN
+F 1 "7.68K" V 7650 3000 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 7580 3000 50  0001 C CNN
+F 3 "" H 7650 3000 50  0001 C CNN
+	1    7650 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 2750 7250 2750
+Wire Wire Line
+	7550 2750 7650 2750
+Wire Wire Line
+	7650 2850 7650 2750
+Connection ~ 7650 2750
+$Comp
+L ReflowOvenController-cache:C C13
+U 1 1 59A82653
+P 8150 3000
+F 0 "C13" H 8175 3100 50  0000 L CNN
+F 1 "22uF" H 8175 2900 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 8188 2850 50  0001 C CNN
+F 3 "" H 8150 3000 50  0001 C CNN
+	1    8150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:+5V #PWR025
+U 1 1 59A82710
+P 8150 2450
+F 0 "#PWR025" H 8150 2300 50  0001 C CNN
+F 1 "+5V" H 8150 2590 50  0000 C CNN
+F 2 "" H 8150 2450 50  0001 C CNN
+F 3 "" H 8150 2450 50  0001 C CNN
+	1    8150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2550 8150 2550
+Wire Wire Line
+	8150 2450 8150 2550
+Wire Wire Line
+	8050 2750 8150 2750
+Connection ~ 8150 2750
+Connection ~ 8150 2550
+Wire Wire Line
+	7650 3250 7650 3150
+Connection ~ 5750 3250
+Wire Wire Line
+	8150 3250 8150 3150
+Connection ~ 7650 3250
+Wire Wire Line
+	6250 2750 5750 2750
+Wire Wire Line
+	5750 2750 5750 3250
+Connection ~ 7650 2350
+Text GLabel 7750 2350 2    47   Input ~ 0
+V_SW
+Connection ~ 5750 2000
+Text GLabel 5850 2000 2    47   Input ~ 0
+DCDC_VIN
+$Comp
+L ReflowOvenController-cache:LM1117-3.3 U6
+U 1 1 59A835CF
+P 5600 4900
+F 0 "U6" H 5700 4650 50  0000 C CNN
+F 1 "LM1117-3.3" H 5600 5150 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5600 4900 50  0001 C CNN
+F 3 "" H 5600 4900 50  0001 C CNN
+	1    5600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:+5V #PWR026
+U 1 1 59A8368A
+P 5200 4800
+F 0 "#PWR026" H 5200 4650 50  0001 C CNN
+F 1 "+5V" H 5200 4940 50  0000 C CNN
+F 2 "" H 5200 4800 50  0001 C CNN
+F 3 "" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:+3.3V #PWR027
+U 1 1 59A83793
+P 6000 4800
+AR Path="/59A83793" Ref="#PWR027"  Part="1" 
+AR Path="/59A80A68/59A83793" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 6000 4650 50  0001 C CNN
+F 1 "+3.3V" H 6000 4940 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4900 6000 4900
+Wire Wire Line
+	6000 4800 6000 4900
+Wire Wire Line
+	5300 4900 5200 4900
+Wire Wire Line
+	5200 4800 5200 4900
+$Comp
+L ReflowOvenController-cache:C C14
+U 1 1 59A8390C
+P 5200 5150
+F 0 "C14" H 5225 5250 50  0000 L CNN
+F 1 "1uF" H 5225 5050 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 5238 5000 50  0001 C CNN
+F 3 "" H 5200 5150 50  0001 C CNN
+	1    5200 5150
+	1    0    0    1   
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C15
+U 1 1 59A83BA7
+P 6000 5150
+F 0 "C15" H 6025 5250 50  0000 L CNN
+F 1 "1uF" H 6025 5050 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 6038 5000 50  0001 C CNN
+F 3 "" H 6000 5150 50  0001 C CNN
+	1    6000 5150
+	1    0    0    1   
+$EndComp
+Connection ~ 6000 4900
+Connection ~ 5200 4900
+$Comp
+L ReflowOvenController-cache:GND #PWR028
+U 1 1 59A83DA0
+P 5200 5500
+F 0 "#PWR028" H 5200 5250 50  0001 C CNN
+F 1 "GND" H 5200 5350 50  0000 C CNN
+F 2 "" H 5200 5500 50  0001 C CNN
+F 3 "" H 5200 5500 50  0001 C CNN
+	1    5200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5500 5200 5400
+Wire Wire Line
+	5200 5400 5600 5400
+Wire Wire Line
+	5600 5400 5600 5200
+Connection ~ 5200 5400
+Wire Wire Line
+	6000 5400 6000 5300
+Connection ~ 5600 5400
+Wire Wire Line
+	4100 2500 4100 2700
+Wire Wire Line
+	4450 2600 4450 2700
+Wire Wire Line
+	4100 3250 4100 3350
+Wire Wire Line
+	4450 3250 4800 3250
+Wire Wire Line
+	4450 2000 4800 2000
+Wire Wire Line
+	4800 2000 5300 2000
+Wire Wire Line
+	5750 2350 5750 2550
+Wire Wire Line
+	4800 3250 5300 3250
+Wire Wire Line
+	5550 2000 5750 2000
+Wire Wire Line
+	5300 2000 5550 2000
+Wire Wire Line
+	5300 3250 5550 3250
+Wire Wire Line
+	5550 3250 5750 3250
+Wire Wire Line
+	7650 2550 7750 2550
+Wire Wire Line
+	7650 2750 7750 2750
+Wire Wire Line
+	8150 2750 8150 2850
+Wire Wire Line
+	8150 2550 8150 2750
+Wire Wire Line
+	5750 3250 7650 3250
+Wire Wire Line
+	7650 3250 8150 3250
+Wire Wire Line
+	7650 2350 7750 2350
+Wire Wire Line
+	5750 2000 5850 2000
+Wire Wire Line
+	6000 4900 6000 5000
+Wire Wire Line
+	5200 4900 5200 5000
+Wire Wire Line
+	5200 5400 5200 5300
+Wire Wire Line
+	5600 5400 6000 5400
+$EndSCHEMATC

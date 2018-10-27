@@ -1,0 +1,484 @@
+EESchema Schematic File Version 4
+LIBS:ReflowOvenController-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "Solid State Relays"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ReflowOvenController-cache:Q_TRIAC_AAG D5
+U 1 1 59A84642
+P 4950 2300
+F 0 "D5" H 5075 2325 50  0000 L CNN
+F 1 "BTA16" H 5075 2250 50  0000 L CNN
+F 2 "STD_PTH:TO-220_Vertical" V 5025 2325 50  0001 C CNN
+F 3 "" V 4950 2300 50  0001 C CNN
+	1    4950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:OPTO-TRIAC U7
+U 1 1 59A848CA
+P 3500 1950
+F 0 "U7" H 3300 2150 50  0000 L CNN
+F 1 "MOC3020M" H 3300 1750 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 3500 1950 50  0001 L CIN
+F 3 "" H 3475 1950 50  0001 L CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R8
+U 1 1 59A84945
+P 2950 1850
+F 0 "R8" V 3030 1850 50  0000 C CNN
+F 1 "100" V 2950 1850 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 2880 1850 50  0001 C CNN
+F 3 "" H 2950 1850 50  0001 C CNN
+	1    2950 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R9
+U 1 1 59A84B07
+P 4050 1850
+F 0 "R9" V 4130 1850 50  0000 C CNN
+F 1 "360" V 4050 1850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 1850 50  0001 C CNN
+F 3 "" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R10
+U 1 1 59A84B3C
+P 4550 1850
+F 0 "R10" V 4630 1850 50  0000 C CNN
+F 1 "470" V 4550 1850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4480 1850 50  0001 C CNN
+F 3 "" H 4550 1850 50  0001 C CNN
+	1    4550 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R11
+U 1 1 59A84D90
+P 5350 2100
+F 0 "R11" V 5430 2100 50  0000 C CNN
+F 1 "39" V 5350 2100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 5280 2100 50  0001 C CNN
+F 3 "" H 5350 2100 50  0001 C CNN
+	1    5350 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C17
+U 1 1 59A84E52
+P 5350 2500
+F 0 "C17" H 5375 2600 50  0000 L CNN
+F 1 "10nF" H 5375 2400 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D12.5mm_W5.0mm_P10.00mm" H 5388 2350 50  0001 C CNN
+F 3 "" H 5350 2500 50  0001 C CNN
+	1    5350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C16
+U 1 1 59A84EC0
+P 4300 2100
+F 0 "C16" H 4325 2200 50  0000 L CNN
+F 1 "50nF" H 4325 2000 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D12.5mm_W5.0mm_P10.00mm" H 4338 1950 50  0001 C CNN
+F 3 "" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 1850 2    47   Input ~ 0
+LIVE
+$Comp
+L ReflowOvenController-cache:Q_TRIAC_AAG D6
+U 1 1 59A86E46
+P 4950 4250
+F 0 "D6" H 5075 4275 50  0000 L CNN
+F 1 "BTA16" H 5075 4200 50  0000 L CNN
+F 2 "STD_PTH:TO-220_Vertical" V 5025 4275 50  0001 C CNN
+F 3 "" V 4950 4250 50  0001 C CNN
+	1    4950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:OPTO-TRIAC U8
+U 1 1 59A86E4C
+P 3500 3900
+F 0 "U8" H 3300 4100 50  0000 L CNN
+F 1 "MOC3020M" H 3300 3700 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 3500 3900 50  0001 L CIN
+F 3 "" H 3475 3900 50  0001 L CNN
+	1    3500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R12
+U 1 1 59A86E52
+P 2950 3800
+F 0 "R12" V 3030 3800 50  0000 C CNN
+F 1 "100" V 2950 3800 50  0000 C CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 2880 3800 50  0001 C CNN
+F 3 "" H 2950 3800 50  0001 C CNN
+	1    2950 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R13
+U 1 1 59A86E59
+P 4050 3800
+F 0 "R13" V 4130 3800 50  0000 C CNN
+F 1 "360" V 4050 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 3800 50  0001 C CNN
+F 3 "" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R14
+U 1 1 59A86E5F
+P 4550 3800
+F 0 "R14" V 4630 3800 50  0000 C CNN
+F 1 "470" V 4550 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4480 3800 50  0001 C CNN
+F 3 "" H 4550 3800 50  0001 C CNN
+	1    4550 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R15
+U 1 1 59A86E70
+P 5350 4050
+F 0 "R15" V 5430 4050 50  0000 C CNN
+F 1 "39" V 5350 4050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 5280 4050 50  0001 C CNN
+F 3 "" H 5350 4050 50  0001 C CNN
+	1    5350 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C19
+U 1 1 59A86E76
+P 5350 4450
+F 0 "C19" H 5375 4550 50  0000 L CNN
+F 1 "10nF" H 5375 4350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D12.5mm_W5.0mm_P10.00mm" H 5388 4300 50  0001 C CNN
+F 3 "" H 5350 4450 50  0001 C CNN
+	1    5350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C18
+U 1 1 59A86E7C
+P 4300 4050
+F 0 "C18" H 4325 4150 50  0000 L CNN
+F 1 "50nF" H 4325 3950 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D12.5mm_W5.0mm_P10.00mm" H 4338 3900 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 3800 2    47   Input ~ 0
+LIVE
+$Comp
+L ReflowOvenController-cache:4N25 U9
+U 1 1 59A87082
+P 3900 5950
+F 0 "U9" H 3950 6150 50  0000 L CNN
+F 1 "H11A1M" H 3750 5750 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 3700 5750 50  0001 L CIN
+F 3 "" H 3900 5950 50  0001 L CNN
+	1    3900 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:C C20
+U 1 1 59A87E7E
+P 4400 5950
+F 0 "C20" H 4425 6050 50  0000 L CNN
+F 1 "100nF" H 4425 5850 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D12.5mm_W5.0mm_P10.00mm" H 4438 5800 50  0001 C CNN
+F 3 "" H 4400 5950 50  0001 C CNN
+	1    4400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R16
+U 1 1 59A88021
+P 4700 5750
+F 0 "R16" V 4780 5750 50  0000 C CNN
+F 1 "47K" V 4700 5750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4630 5750 50  0001 C CNN
+F 3 "" H 4700 5750 50  0001 C CNN
+	1    4700 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L ReflowOvenController-cache:R R17
+U 1 1 59A884E7
+P 4700 6150
+F 0 "R17" V 4780 6150 50  0000 C CNN
+F 1 "47K" V 4700 6150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4630 6150 50  0001 C CNN
+F 3 "" H 4700 6150 50  0001 C CNN
+	1    4700 6150
+	0    1    1    0   
+$EndComp
+Text GLabel 5000 5750 2    47   Input ~ 0
+LIVE
+Text GLabel 5000 6150 2    47   Input ~ 0
+NEUTRAL
+Text GLabel 3450 5950 0    47   Input ~ 0
+ZEROX
+$Comp
+L ReflowOvenController-cache:GND #PWR029
+U 1 1 59A8906C
+P 3500 6150
+F 0 "#PWR029" H 3500 5900 50  0001 C CNN
+F 1 "GND" H 3500 6000 50  0000 C CNN
+F 2 "" H 3500 6150 50  0001 C CNN
+F 3 "" H 3500 6150 50  0001 C CNN
+	1    3500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:+5V #PWR030
+U 1 1 59A8944E
+P 2700 1750
+F 0 "#PWR030" H 2700 1600 50  0001 C CNN
+F 1 "+5V" H 2700 1890 50  0000 C CNN
+F 2 "" H 2700 1750 50  0001 C CNN
+F 3 "" H 2700 1750 50  0001 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:+5V #PWR031
+U 1 1 59A89537
+P 2700 3700
+F 0 "#PWR031" H 2700 3550 50  0001 C CNN
+F 1 "+5V" H 2700 3840 50  0000 C CNN
+F 2 "" H 2700 3700 50  0001 C CNN
+F 3 "" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3050 2050 0    47   Input ~ 0
+SSR1
+Text GLabel 3050 4000 0    47   Input ~ 0
+SSR2
+NoConn ~ 3600 5850
+Text GLabel 5750 2750 2    47   Input ~ 0
+SSR_OUT1
+Text GLabel 5500 4700 2    47   Input ~ 0
+SSR_OUT2
+$Comp
+L ReflowOvenController-cache:CONN_01X02 J2
+U 1 1 59A8AED0
+P 8600 3000
+F 0 "J2" H 8600 3150 50  0000 C CNN
+F 1 "HEATER" V 8700 3000 50  0000 C CNN
+F 2 "Connector:MKDS3-2-5.08" H 8600 3000 50  0001 C CNN
+F 3 "" H 8600 3000 50  0001 C CNN
+	1    8600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:CONN_01X02 J3
+U 1 1 59A8B188
+P 8600 3600
+F 0 "J3" H 8600 3750 50  0000 C CNN
+F 1 "FAN" V 8700 3600 50  0000 C CNN
+F 2 "Connector:MKDS3-2-5.08" H 8600 3600 50  0001 C CNN
+F 3 "" H 8600 3600 50  0001 C CNN
+	1    8600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReflowOvenController-cache:CONN_01X02 J4
+U 1 1 59A8B28E
+P 8600 4200
+F 0 "J4" H 8600 4350 50  0000 C CNN
+F 1 "MAIN" V 8700 4200 50  0000 C CNN
+F 2 "Connector:MKDS3-2-5.08" H 8600 4200 50  0001 C CNN
+F 3 "" H 8600 4200 50  0001 C CNN
+	1    8600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1850 3200 1850
+Wire Wire Line
+	3800 2050 3950 2050
+Wire Wire Line
+	3950 2050 3950 2400
+Wire Wire Line
+	3800 1850 3900 1850
+Wire Wire Line
+	4200 1850 4300 1850
+Wire Wire Line
+	4300 1850 4300 1950
+Connection ~ 4300 1850
+Wire Wire Line
+	4700 1850 4950 1850
+Wire Wire Line
+	4950 1850 4950 2150
+Wire Wire Line
+	4300 2250 4300 2750
+Wire Wire Line
+	4300 2750 4950 2750
+Wire Wire Line
+	4950 2750 4950 2450
+Wire Wire Line
+	5350 2250 5350 2350
+Wire Wire Line
+	5350 1850 5350 1950
+Connection ~ 4950 1850
+Wire Wire Line
+	5350 2750 5350 2650
+Connection ~ 4950 2750
+Connection ~ 5350 1850
+Wire Wire Line
+	3950 2400 4800 2400
+Wire Wire Line
+	3100 3800 3200 3800
+Wire Wire Line
+	3800 4000 3950 4000
+Wire Wire Line
+	3950 4000 3950 4350
+Wire Wire Line
+	3800 3800 3900 3800
+Wire Wire Line
+	4200 3800 4300 3800
+Wire Wire Line
+	4300 3800 4300 3900
+Connection ~ 4300 3800
+Wire Wire Line
+	4700 3800 4950 3800
+Wire Wire Line
+	4950 3800 4950 4100
+Wire Wire Line
+	4300 4200 4300 4700
+Wire Wire Line
+	4300 4700 4950 4700
+Wire Wire Line
+	4950 4700 4950 4400
+Wire Wire Line
+	5350 4200 5350 4300
+Wire Wire Line
+	5350 3800 5350 3900
+Connection ~ 4950 3800
+Wire Wire Line
+	5350 4700 5350 4600
+Connection ~ 4950 4700
+Connection ~ 5350 3800
+Wire Wire Line
+	3950 4350 4800 4350
+Wire Wire Line
+	4200 5850 4300 5850
+Wire Wire Line
+	4300 5850 4300 5750
+Wire Wire Line
+	4300 5750 4400 5750
+Wire Wire Line
+	4400 5750 4400 5800
+Wire Wire Line
+	4200 6050 4300 6050
+Wire Wire Line
+	4300 6050 4300 6150
+Wire Wire Line
+	4300 6150 4400 6150
+Wire Wire Line
+	4400 6150 4400 6100
+Connection ~ 4400 5750
+Connection ~ 4400 6150
+Wire Wire Line
+	4850 5750 5000 5750
+Wire Wire Line
+	4850 6150 5000 6150
+Wire Wire Line
+	3600 5950 3450 5950
+Wire Wire Line
+	3600 6050 3500 6050
+Wire Wire Line
+	3500 6050 3500 6150
+Wire Wire Line
+	2800 1850 2700 1850
+Wire Wire Line
+	2700 1850 2700 1750
+Wire Wire Line
+	2800 3800 2700 3800
+Wire Wire Line
+	2700 3800 2700 3700
+Wire Wire Line
+	3200 2050 3050 2050
+Wire Wire Line
+	3200 4000 3050 4000
+Connection ~ 5350 2750
+Connection ~ 5350 4700
+Wire Wire Line
+	8400 3050 8300 3050
+Wire Wire Line
+	8400 2950 8150 2950
+Text GLabel 8150 2950 0    47   Input ~ 0
+SSR_OUT1
+Text GLabel 8150 3650 0    47   Input ~ 0
+SSR_OUT2
+Text GLabel 8150 4150 0    47   Input ~ 0
+LIVE
+Text GLabel 8150 4250 0    47   Input ~ 0
+NEUTRAL
+Wire Wire Line
+	8300 3050 8300 3550
+Wire Wire Line
+	8400 3550 8300 3550
+Connection ~ 8300 3550
+Wire Wire Line
+	8400 3650 8150 3650
+Wire Wire Line
+	8150 4250 8300 4250
+Connection ~ 8300 4250
+Wire Wire Line
+	8400 4150 8150 4150
+Wire Wire Line
+	4300 1850 4400 1850
+Wire Wire Line
+	4950 1850 5350 1850
+Wire Wire Line
+	4950 2750 5350 2750
+Wire Wire Line
+	5350 1850 5750 1850
+Wire Wire Line
+	4300 3800 4400 3800
+Wire Wire Line
+	4950 3800 5350 3800
+Wire Wire Line
+	4950 4700 5350 4700
+Wire Wire Line
+	5350 3800 5500 3800
+Wire Wire Line
+	4400 5750 4550 5750
+Wire Wire Line
+	4400 6150 4550 6150
+Wire Wire Line
+	5350 2750 5750 2750
+Wire Wire Line
+	5350 4700 5500 4700
+Wire Wire Line
+	8300 3550 8300 4250
+Wire Wire Line
+	8300 4250 8400 4250
+$EndSCHEMATC
