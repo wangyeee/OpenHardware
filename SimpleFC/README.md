@@ -31,7 +31,7 @@ The following table summarizes usage of the MCU, details such as pinout and DMA 
 | UART4, USART2 | RC input, support serial, S.Bus or PPM |
 | USART1 | telemetry |
 | USART3 | UBlox [NEO-M8N](https://www.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_%28UBX-15031086%29.pdf) GPS receiver |
-| USB | DFU |
+| USB | DFU or CDC telemetry |
 
 ## 3D preview and photo
 Some 3D models are missing in the KiCAD render, refer to the "real word render" for more details.
