@@ -14,3 +14,4 @@ Brief description for each folders.
 | SerialBTBridge | A bridge board between RFM22B telemetry module and HC05 Bluetooth module | EAGLE |
 | TinyFC | A tiny flight controller module, supporting board stacking for advanced features | KiCAD |
 | ReflowOvenController | A controller board used to convert a commercial oven to PCB reflow oven. | KiCAD |
+| AirSensor | A barometer and differential pressure sensor board with UAVCAN support. | KiCAD |
