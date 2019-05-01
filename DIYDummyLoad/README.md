@@ -1,5 +1,5 @@
 # DIYDummyLoad
-A primitive DC dummy load with STM32F103.
+A primitive DC dummy load with STM32F103. Firmware is also open source and can be found in this [repo](https://github.com/wangyeee/DIYDummyLoad).
 
 ## Components & features
 1. STM32F103RC MCU.
