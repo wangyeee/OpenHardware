@@ -15,3 +15,4 @@ Brief description for each folders.
 | TinyFC | A tiny flight controller module, supporting board stacking for advanced features | KiCAD |
 | ReflowOvenController | A controller board used to convert a commercial oven to PCB reflow oven. | KiCAD |
 | AirSensor | A barometer and differential pressure sensor board with UAVCAN support. | KiCAD |
+| DIYDummyLoad | A primitive DC dummy load with STM32F103. | EAGLE |
