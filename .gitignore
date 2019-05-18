@@ -23,7 +23,6 @@ eagle.epf
 *.crc
 *.crs
 *.dri
-*.drl
 *.gpi
 *.pls
 *.drd
@@ -35,3 +34,4 @@ eagle.epf
 *.net
 *.bak
 *.kicad_pcb-bak
+fp-info-cache
