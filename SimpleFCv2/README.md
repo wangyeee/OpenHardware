@@ -6,6 +6,7 @@ Version 2 of SimpleFC.
 ## Change List
 
 - Onboard UBlox GPS receiver has been removed to reduce PCB size.
+- The MAG3110 magnetometer is replaced by MMC5883MA.
 - The 4 pin SWD connector has been replaced by 10-pin JTAG connector, with JTDI/JTDO signals available.
 - Schematics libraries have been updated to latest version from the KiCAD github repo.
 - One additional LED is added to the board, with 5 in total.
@@ -30,7 +31,7 @@ The following table summarizes usage of the MCU, details such as pinout and DMA 
 |----|----|
 | ADC1 | battery monitor and two analog inputs |
 |CAN2 | CAN bus |
-| I2C1 | [MAG3110](https://www.nxp.com/docs/en/data-sheet/MAG3110.pdf) magnetometer and EEPROM |
+| I2C1 | [MMC5883MA](https://www.memsic.com/userfiles/files/DataSheets/Magnetic-Sensors-Datasheets/MMC5883MA-RevC.pdf) magnetometer and EEPROM |
 | SDIO | TF card slot |
 | SPI1 | [ICM20689](http://www.invensense.com/wp-content/uploads/2017/08/ICM-20689-v2.2-002.pdf) gyroscope/accelerometer and [MS5611](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5611-01BA03%7FB3%7Fpdf%7FEnglish%7FENG_DS_MS5611-01BA03_B3.pdf%7FCAT-BLPS0036) barometer |
 | TIM3, TIM4, TIM12 | 8 channel PWM output |
