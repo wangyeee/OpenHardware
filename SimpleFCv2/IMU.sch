@@ -37,17 +37,6 @@ F 3 "" H 2500 2450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mems:MAG3110 U3
-U 1 1 5A63D30B
-P 7950 2450
-F 0 "U3" H 7950 2887 60  0000 C CNN
-F 1 "MAG3110" H 7950 2781 60  0000 C CNN
-F 2 "MEMS:DFN-10" H 7950 2450 60  0001 C CNN
-F 3 "" H 7950 2450 60  0001 C CNN
-	1    7950 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR016
 U 1 1 5A63D7A1
 P 1750 2700
@@ -70,17 +59,6 @@ F 3 "" H 1750 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR014
-U 1 1 5A63D7E8
-P 6350 2150
-F 0 "#PWR014" H 6350 2000 50  0001 C CNN
-F 1 "+3V3" H 6365 2323 50  0000 C CNN
-F 2 "" H 6350 2150 50  0001 C CNN
-F 3 "" H 6350 2150 50  0001 C CNN
-	1    6350 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR018
 U 1 1 5A63D7F9
 P 3650 5250
@@ -94,12 +72,12 @@ $EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 5A63D80A
-P 6350 2950
-F 0 "#PWR017" H 6350 2700 50  0001 C CNN
-F 1 "GND" H 6355 2777 50  0000 C CNN
-F 2 "" H 6350 2950 50  0001 C CNN
-F 3 "" H 6350 2950 50  0001 C CNN
-	1    6350 2950
+P 8050 3550
+F 0 "#PWR017" H 8050 3300 50  0001 C CNN
+F 1 "GND" H 8055 3377 50  0000 C CNN
+F 2 "" H 8050 3550 50  0001 C CNN
+F 3 "" H 8050 3550 50  0001 C CNN
+	1    8050 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -229,138 +207,12 @@ Wire Wire Line
 Connection ~ 3400 5900
 Wire Wire Line
 	3400 5900 3150 5900
-$Comp
-L Device:C C17
-U 1 1 5A63FA69
-P 7100 2600
-F 0 "C17" H 7100 2700 50  0000 L CNN
-F 1 "100nF" H 7100 2500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7138 2450 50  0001 C CNN
-F 3 "" H 7100 2600 50  0001 C CNN
-	1    7100 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 5A63FB51
-P 6850 2600
-F 0 "C16" H 6850 2700 50  0000 L CNN
-F 1 "100nF" H 6850 2500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6888 2450 50  0001 C CNN
-F 3 "" H 6850 2600 50  0001 C CNN
-	1    6850 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5A63FB79
-P 6600 2600
-F 0 "C15" H 6600 2700 50  0000 L CNN
-F 1 "100nF" H 6600 2500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6638 2450 50  0001 C CNN
-F 3 "" H 6600 2600 50  0001 C CNN
-	1    6600 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 5A63FBAB
-P 6350 2600
-F 0 "C14" H 6350 2700 50  0000 L CNN
-F 1 "1uF" H 6350 2500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6388 2450 50  0001 C CNN
-F 3 "" H 6350 2600 50  0001 C CNN
-	1    6350 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5A63FC0A
-P 9700 2300
-F 0 "C12" H 9700 2400 50  0000 L CNN
-F 1 "100nF" H 9700 2200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9738 2150 50  0001 C CNN
-F 3 "" H 9700 2300 50  0001 C CNN
-	1    9700 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 2250 6600 2250
-Wire Wire Line
-	6350 2250 6350 2150
-Wire Wire Line
-	6350 2250 6350 2450
-Connection ~ 6350 2250
-Wire Wire Line
-	6350 2750 6350 2850
-Wire Wire Line
-	6350 2850 6600 2850
-Wire Wire Line
-	7350 2850 7350 2650
-Wire Wire Line
-	7350 2550 7450 2550
-Connection ~ 6350 2850
-Wire Wire Line
-	6350 2850 6350 2950
-Wire Wire Line
-	7450 2650 7350 2650
-Connection ~ 7350 2650
-Wire Wire Line
-	7350 2650 7350 2550
-Wire Wire Line
-	7450 2450 7100 2450
-Wire Wire Line
-	7450 2350 6850 2350
-Wire Wire Line
-	6850 2350 6850 2450
-Wire Wire Line
-	6600 2450 6600 2250
-Connection ~ 6600 2250
-Wire Wire Line
-	6600 2250 6350 2250
-Wire Wire Line
-	6600 2750 6600 2850
-Connection ~ 6600 2850
-Wire Wire Line
-	6600 2850 6850 2850
-Wire Wire Line
-	6850 2750 6850 2850
-Connection ~ 6850 2850
-Wire Wire Line
-	6850 2850 7100 2850
-Wire Wire Line
-	7100 2750 7100 2850
-Connection ~ 7100 2850
-Wire Wire Line
-	7100 2850 7350 2850
-$Comp
-L power:+3V3 #PWR013
-U 1 1 5A64373E
-P 9700 1750
-F 0 "#PWR013" H 9700 1600 50  0001 C CNN
-F 1 "+3V3" H 9715 1923 50  0000 C CNN
-F 2 "" H 9700 1750 50  0001 C CNN
-F 3 "" H 9700 1750 50  0001 C CNN
-	1    9700 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 2350 9000 2350
-Wire Wire Line
-	8450 2450 8700 2450
-Wire Wire Line
-	8450 2550 8650 2550
-Text GLabel 9150 2350 2    50   Input ~ 0
+Text GLabel 7100 2850 0    50   Input ~ 0
 I2C1_SDA
-Text GLabel 9150 2450 2    50   Input ~ 0
+Text GLabel 7100 2750 0    50   Input ~ 0
 I2C1_SCL
-Text GLabel 9150 2550 2    50   Input ~ 0
+Text GLabel 7100 2950 0    50   Input ~ 0
 MAG_INT
-Wire Wire Line
-	7350 2850 9150 2850
-Wire Wire Line
-	9700 2850 9700 2450
-Connection ~ 7350 2850
 $Comp
 L Device:C C13
 U 1 1 5A647F22
@@ -419,56 +271,25 @@ BARO_CS
 $Comp
 L Device:R R5
 U 1 1 5A656D4F
-P 8700 2100
-F 0 "R5" H 8770 2146 50  0000 L CNN
-F 1 "4.7K" H 8770 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8630 2100 50  0001 C CNN
-F 3 "" H 8700 2100 50  0001 C CNN
-	1    8700 2100
+P 7550 2500
+F 0 "R5" H 7620 2546 50  0000 L CNN
+F 1 "4.7K" H 7620 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7480 2500 50  0001 C CNN
+F 3 "" H 7550 2500 50  0001 C CNN
+	1    7550 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 5A65BDAB
-P 9000 2100
-F 0 "R6" H 9070 2146 50  0000 L CNN
-F 1 "4.7K" H 9070 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8930 2100 50  0001 C CNN
-F 3 "" H 9000 2100 50  0001 C CNN
-	1    9000 2100
+P 7250 2500
+F 0 "R6" H 7320 2546 50  0000 L CNN
+F 1 "4.7K" H 7320 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7180 2500 50  0001 C CNN
+F 3 "" H 7250 2500 50  0001 C CNN
+	1    7250 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 2250 8550 2250
-Wire Wire Line
-	8550 2250 8550 1850
-Wire Wire Line
-	8550 1850 8700 1850
-Wire Wire Line
-	8700 1850 8700 1950
-Wire Wire Line
-	8700 1850 9000 1850
-Wire Wire Line
-	9000 1850 9000 1950
-Connection ~ 8700 1850
-Wire Wire Line
-	8700 2250 8700 2450
-Connection ~ 8700 2450
-Wire Wire Line
-	8700 2450 9150 2450
-Wire Wire Line
-	9000 2250 9000 2350
-Connection ~ 9000 2350
-Wire Wire Line
-	9000 2350 9150 2350
-Wire Wire Line
-	9000 1850 9700 1850
-Wire Wire Line
-	9700 1850 9700 2150
-Connection ~ 9000 1850
-Wire Wire Line
-	9700 1750 9700 1850
-Connection ~ 9700 1850
 $Comp
 L Device:R R8
 U 1 1 5AC135CF
@@ -493,35 +314,134 @@ Wire Wire Line
 Connection ~ 4000 5000
 Wire Wire Line
 	4000 5000 4100 5000
-$Comp
-L Device:R R7
-U 1 1 5AC2FDA6
-P 8900 2750
-F 0 "R7" V 9000 2700 50  0000 L CNN
-F 1 "10K" V 8900 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 2750 50  0001 C CNN
-F 3 "" H 8900 2750 50  0001 C CNN
-	1    8900 2750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8750 2750 8650 2750
-Wire Wire Line
-	8650 2750 8650 2550
-Connection ~ 8650 2550
-Wire Wire Line
-	8650 2550 9150 2550
-Wire Wire Line
-	9050 2750 9150 2750
-Wire Wire Line
-	9150 2750 9150 2850
-Connection ~ 9150 2850
-Wire Wire Line
-	9150 2850 9700 2850
 Text Notes 2150 1800 0    100  ~ 0
 Barometer
-Text Notes 7400 1750 0    100  ~ 0
+Text Notes 7500 1800 0    100  ~ 0
 Magnetometer
 Text Notes 1750 4200 0    100  ~ 0
 Gyroscope and Accelerometer
+$Comp
+L Sensor_Magnetic:MMC5883MA U3
+U 1 1 5CDF7B73
+P 8050 2850
+F 0 "U3" H 8200 3100 50  0000 L CNN
+F 1 "MMC5883MA" H 8050 2600 50  0000 L CNN
+F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm" H 8050 2150 50  0001 C CNN
+F 3 "http://www.memsic.com/userfiles/files/DataSheets/Magnetic-Sensors-Datasheets/MMC5883MA-RevC.pdf" H 7950 2850 50  0001 C CNN
+	1    8050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5A63FB79
+P 8650 3150
+F 0 "C15" H 8650 3250 50  0000 L CNN
+F 1 "10uF" H 8650 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8688 3000 50  0001 C CNN
+F 3 "" H 8650 3150 50  0001 C CNN
+	1    8650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5A63FBAB
+P 8450 2400
+F 0 "C14" V 8600 2400 50  0000 C CNN
+F 1 "1uF" V 8300 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8488 2250 50  0001 C CNN
+F 3 "" H 8450 2400 50  0001 C CNN
+	1    8450 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2750 7550 2750
+Wire Wire Line
+	7550 2650 7550 2750
+Connection ~ 7550 2750
+Wire Wire Line
+	7550 2750 7100 2750
+Wire Wire Line
+	7100 2850 7250 2850
+Wire Wire Line
+	7250 2850 7250 2650
+Wire Wire Line
+	7250 2850 7650 2850
+Connection ~ 7250 2850
+Wire Wire Line
+	8050 3150 8050 3450
+Connection ~ 8050 3450
+Wire Wire Line
+	8050 3450 8050 3550
+Wire Wire Line
+	8300 2400 8150 2400
+Wire Wire Line
+	8150 2400 8150 2550
+Wire Wire Line
+	8150 2400 8050 2400
+Wire Wire Line
+	8050 2400 8050 2550
+Connection ~ 8150 2400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CE2BB49
+P 8050 2150
+F 0 "#PWR?" H 8050 2000 50  0001 C CNN
+F 1 "+3V3" H 8065 2323 50  0000 C CNN
+F 2 "" H 8050 2150 50  0001 C CNN
+F 3 "" H 8050 2150 50  0001 C CNN
+	1    8050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2150 8050 2250
+Connection ~ 8050 2400
+Wire Wire Line
+	8450 2850 8650 2850
+Wire Wire Line
+	8650 2850 8650 3000
+Wire Wire Line
+	8050 3450 8650 3450
+Wire Wire Line
+	8650 3450 8650 3300
+Wire Wire Line
+	8600 2400 8950 2400
+Wire Wire Line
+	8950 2400 8950 3450
+Wire Wire Line
+	8950 3450 8650 3450
+Connection ~ 8650 3450
+Wire Wire Line
+	8050 2250 7550 2250
+Wire Wire Line
+	7250 2250 7250 2350
+Connection ~ 8050 2250
+Wire Wire Line
+	8050 2250 8050 2400
+Wire Wire Line
+	7550 2350 7550 2250
+Connection ~ 7550 2250
+Wire Wire Line
+	7550 2250 7250 2250
+Wire Wire Line
+	7100 2950 7550 2950
+Connection ~ 7550 2950
+Wire Wire Line
+	7550 2950 7650 2950
+Wire Wire Line
+	7550 3450 8050 3450
+Wire Wire Line
+	7550 3350 7550 3450
+Wire Wire Line
+	7550 3050 7550 2950
+$Comp
+L Device:R R7
+U 1 1 5CE1842B
+P 7550 3200
+F 0 "R7" H 7620 3246 50  0000 L CNN
+F 1 "10K" H 7620 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7480 3200 50  0001 C CNN
+F 3 "" H 7550 3200 50  0001 C CNN
+	1    7550 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
