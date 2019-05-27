@@ -17,3 +17,4 @@ Brief description for each folders.
 | ReflowOvenController | A controller board used to convert a commercial oven to PCB reflow oven. | KiCAD |
 | AirSensor | A barometer and differential pressure sensor board with UAVCAN support. | KiCAD |
 | DIYDummyLoad | A primitive DC dummy load with STM32F103. | EAGLE |
+| TinyBEC | 2s ~ 3s / 2A Li-Po BEC, board size 23x18mm. | KiCAD |
