@@ -10,6 +10,7 @@ Brief description for each folders.
 | OscillatorBreakout | A breakout board for oscillators, supporting three different oscillator packages | KiCAD |
 | SimpleFC | Simple yet powerful flight controller for drones, capable of fully autonomous GPS navigation | KiCAD |
 | SimpleFCv2 | Version 2 of SimpleFC, with reduced PCB size | KiCAD |
+| SimpleFC_G | SimpleFCv2 with integrated GPS receiver | KiCAD |
 | MultiRotorHub | A support board in multi-rotor which makes cable management easy | EAGLE |
 | PowerModule  | 2s ~ 6s Li-Po BEC with current monitoring |EAGLE  |
 | SerialBTBridge | A bridge board between RFM22B telemetry module and HC05 Bluetooth module | EAGLE |
