@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:SimpleFC-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title "Transceivers"
 Date "2018-03-26"
 Rev "1.0"
@@ -15,48 +14,20 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LogicLevel:SN74LVC245APW U9
-U 1 1 5A5C8CF4
-P 3400 2600
-F 0 "U9" H 3400 3269 47  0000 C CNN
-F 1 "SN74LVC245APW" H 3400 3182 47  0000 C CNN
-F 2 "Package_SSOP:TSSOP-20_4.4x6.5mm_P0.65mm" H 3600 2550 47  0001 C CNN
-F 3 "" H 3600 2550 47  0001 C CNN
-	1    3400 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR038
 U 1 1 5A5C8F6E
-P 2800 3150
-F 0 "#PWR038" H 2800 2900 50  0001 C CNN
-F 1 "GND" H 2805 2977 50  0000 C CNN
-F 2 "" H 2800 3150 50  0001 C CNN
-F 3 "" H 2800 3150 50  0001 C CNN
-	1    2800 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR036
-U 1 1 5A5C8FCC
-P 4350 2050
-F 0 "#PWR036" H 4350 1900 50  0001 C CNN
-F 1 "+3V3" H 4365 2223 50  0000 C CNN
-F 2 "" H 4350 2050 50  0001 C CNN
-F 3 "" H 4350 2050 50  0001 C CNN
-	1    4350 2050
+P 3400 3750
+F 0 "#PWR038" H 3400 3500 50  0001 C CNN
+F 1 "GND" H 3405 3577 50  0000 C CNN
+F 2 "" H 3400 3750 50  0001 C CNN
+F 3 "" H 3400 3750 50  0001 C CNN
+	1    3400 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 2150 4350 2150
-Wire Wire Line
-	4350 2150 4350 2050
-Wire Wire Line
-	2900 3050 2800 3050
-Wire Wire Line
-	2800 3050 2800 3150
+	3400 3650 3400 3750
 $Comp
-L SimpleFC-cache:74LVC1G86-Logic_74xgxx U8
+L SimpleFC-rescue:74LVC1G86-Logic_74xgxx-SimpleFC-cache U8
 U 1 1 5A5C929E
 P 7400 2500
 F 0 "U8" H 7500 2650 50  0000 C CNN
@@ -136,7 +107,7 @@ F 3 "" H 8200 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7650 2500 7800 2500
-Text GLabel 7800 2500 2    50   Input ~ 0
+Text HLabel 7800 2500 2    50   Input ~ 0
 U2RX
 Wire Wire Line
 	7100 2450 6500 2450
@@ -188,12 +159,12 @@ Wire Wire Line
 Wire Wire Line
 	8200 2550 8200 2300
 Connection ~ 8200 2300
-Text GLabel 6150 2450 0    50   Input ~ 0
+Text HLabel 6150 2450 0    50   Input ~ 0
 U2TX
-Text GLabel 6900 2550 0    50   Input ~ 0
+Text HLabel 6900 2550 0    50   Input ~ 0
 RC_IN1
 $Comp
-L SimpleFC-cache:74LVC1G86-Logic_74xgxx U10
+L SimpleFC-rescue:74LVC1G86-Logic_74xgxx-SimpleFC-cache U10
 U 1 1 5A5D0FC5
 P 7400 4500
 F 0 "U10" H 7500 4650 50  0000 C CNN
@@ -273,7 +244,7 @@ F 3 "" H 8200 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7650 4500 7800 4500
-Text GLabel 7800 4500 2    50   Input ~ 0
+Text HLabel 7800 4500 2    50   Input ~ 0
 U4RX
 Wire Wire Line
 	7100 4450 6500 4450
@@ -325,9 +296,9 @@ Wire Wire Line
 Wire Wire Line
 	8200 4550 8200 4300
 Connection ~ 8200 4300
-Text GLabel 6150 4450 0    50   Input ~ 0
+Text HLabel 6150 4450 0    50   Input ~ 0
 U4TX
-Text GLabel 6900 4550 0    50   Input ~ 0
+Text HLabel 6900 4550 0    50   Input ~ 0
 RC_IN2
 $Comp
 L power:GND #PWR039
@@ -340,110 +311,63 @@ F 3 "" H 4350 3150 50  0001 C CNN
 	1    4350 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 3050 4350 3050
-Wire Wire Line
-	4350 3050 4350 3150
 $Comp
 L power:+3V3 #PWR035
 U 1 1 5A5D2D01
-P 2800 2050
-F 0 "#PWR035" H 2800 1900 50  0001 C CNN
-F 1 "+3V3" H 2815 2223 50  0000 C CNN
-F 2 "" H 2800 2050 50  0001 C CNN
-F 3 "" H 2800 2050 50  0001 C CNN
-	1    2800 2050
+P 3400 1750
+F 0 "#PWR035" H 3400 1600 50  0001 C CNN
+F 1 "+3V3" H 3415 1923 50  0000 C CNN
+F 2 "" H 3400 1750 50  0001 C CNN
+F 3 "" H 3400 1750 50  0001 C CNN
+	1    3400 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 2150 2800 2150
-Wire Wire Line
-	2800 2150 2800 2050
-Text Notes 3150 3200 0    50   ~ 0
+Text Notes 2500 3100 0    50   ~ 0
 DIR=1, A->B
-$Comp
-L bus-transceiver:TJA1050 U11
-U 1 1 5A5D556F
-P 3450 4800
-F 0 "U11" H 3450 5169 47  0000 C CNN
-F 1 "TJA1050" H 3450 5082 47  0000 C CNN
-F 2 "STD_SMD:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3450 4800 47  0001 C CNN
-F 3 "" H 3450 4800 47  0001 C CNN
-	1    3450 4800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR042
 U 1 1 5A5D56FF
-P 2300 4550
-F 0 "#PWR042" H 2300 4400 50  0001 C CNN
-F 1 "+5V" H 2315 4723 50  0000 C CNN
-F 2 "" H 2300 4550 50  0001 C CNN
-F 3 "" H 2300 4550 50  0001 C CNN
-	1    2300 4550
+P 2400 4700
+F 0 "#PWR042" H 2400 4550 50  0001 C CNN
+F 1 "+5V" H 2415 4873 50  0000 C CNN
+F 2 "" H 2400 4700 50  0001 C CNN
+F 3 "" H 2400 4700 50  0001 C CNN
+	1    2400 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 4650 2900 4650
 $Comp
 L power:GND #PWR043
 U 1 1 5A5D6489
-P 2300 5050
-F 0 "#PWR043" H 2300 4800 50  0001 C CNN
-F 1 "GND" H 2305 4877 50  0000 C CNN
-F 2 "" H 2300 5050 50  0001 C CNN
-F 3 "" H 2300 5050 50  0001 C CNN
-	1    2300 5050
+P 2400 5900
+F 0 "#PWR043" H 2400 5650 50  0001 C CNN
+F 1 "GND" H 2405 5727 50  0000 C CNN
+F 2 "" H 2400 5900 50  0001 C CNN
+F 3 "" H 2400 5900 50  0001 C CNN
+	1    2400 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 4950 2900 4950
+	3100 5100 2950 5100
 Wire Wire Line
-	3000 4750 2850 4750
-Wire Wire Line
-	3000 4850 2850 4850
-Text GLabel 2850 4750 0    50   Input ~ 0
+	3100 5200 2950 5200
+Text HLabel 2950 5100 0    50   Input ~ 0
 CAN2_TX
-Text GLabel 2850 4850 0    50   Input ~ 0
+Text HLabel 2950 5200 0    50   Input ~ 0
 CAN2_RX
-NoConn ~ 3900 4650
-NoConn ~ 3900 4950
 $Comp
 L Device:R R19
 U 1 1 5A5DD40B
-P 4250 4800
-F 0 "R19" H 4320 4846 50  0000 L CNN
-F 1 "120" H 4320 4755 50  0000 L CNN
-F 2 "STD_SMD:R_0603_HandSoldering" V 4180 4800 50  0001 C CNN
-F 3 "" H 4250 4800 50  0001 C CNN
-	1    4250 4800
-	1    0    0    -1  
+P 4450 5300
+F 0 "R19" H 4520 5346 50  0000 L CNN
+F 1 "120" H 4520 5255 50  0000 L CNN
+F 2 "STD_SMD:R_0603_HandSoldering" V 4380 5300 50  0001 C CNN
+F 3 "" H 4450 5300 50  0001 C CNN
+	1    4450 5300
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3900 4850 4050 4850
-Wire Wire Line
-	4050 4850 4050 5050
-Wire Wire Line
-	4050 5050 4250 5050
-Wire Wire Line
-	4250 5050 4250 4950
-Wire Wire Line
-	3900 4750 4050 4750
-Wire Wire Line
-	4050 4750 4050 4550
-Wire Wire Line
-	4050 4550 4250 4550
-Wire Wire Line
-	4250 4550 4250 4650
-Wire Wire Line
-	4250 4550 4450 4550
-Connection ~ 4250 4550
-Wire Wire Line
-	4250 5050 4450 5050
-Connection ~ 4250 5050
-Text GLabel 4450 4550 2    50   Input ~ 0
+Text HLabel 4600 5550 2    50   Input ~ 0
 CANL
-Text GLabel 4450 5050 2    50   Input ~ 0
+Text HLabel 4600 5050 2    50   Input ~ 0
 CANH
 Wire Wire Line
 	2900 2950 2750 2950
@@ -461,21 +385,21 @@ Wire Wire Line
 	2900 2350 2750 2350
 Wire Wire Line
 	2900 2250 2750 2250
-Text GLabel 2750 2250 0    50   Input ~ 0
+Text HLabel 2750 2250 0    50   Input ~ 0
 T4C4
-Text GLabel 2750 2350 0    50   Input ~ 0
+Text HLabel 2750 2350 0    50   Input ~ 0
 T4C3
-Text GLabel 2750 2850 0    50   Input ~ 0
+Text HLabel 2750 2850 0    50   Input ~ 0
 T3C3
-Text GLabel 2750 2950 0    50   Input ~ 0
+Text HLabel 2750 2950 0    50   Input ~ 0
 T3C4
-Text GLabel 2750 2750 0    50   Input ~ 0
+Text HLabel 2750 2750 0    50   Input ~ 0
 T12C1
-Text GLabel 2750 2650 0    50   Input ~ 0
+Text HLabel 2750 2650 0    50   Input ~ 0
 T12C2
-Text GLabel 2750 2450 0    50   Input ~ 0
+Text HLabel 2750 2450 0    50   Input ~ 0
 T3C2
-Text GLabel 2750 2550 0    50   Input ~ 0
+Text HLabel 2750 2550 0    50   Input ~ 0
 T3C1
 Wire Wire Line
 	3900 2250 4050 2250
@@ -493,31 +417,31 @@ Wire Wire Line
 	3900 2850 4050 2850
 Wire Wire Line
 	3900 2950 4050 2950
-Text GLabel 4050 2250 2    50   Input ~ 0
+Text HLabel 4050 2250 2    50   Input ~ 0
 M1
-Text GLabel 4050 2350 2    50   Input ~ 0
+Text HLabel 4050 2350 2    50   Input ~ 0
 M2
-Text GLabel 4050 2450 2    50   Input ~ 0
+Text HLabel 4050 2450 2    50   Input ~ 0
 M3
-Text GLabel 4050 2550 2    50   Input ~ 0
+Text HLabel 4050 2550 2    50   Input ~ 0
 M4
-Text GLabel 4050 2650 2    50   Input ~ 0
+Text HLabel 4050 2650 2    50   Input ~ 0
 M5
-Text GLabel 4050 2750 2    50   Input ~ 0
+Text HLabel 4050 2750 2    50   Input ~ 0
 M6
-Text GLabel 4050 2850 2    50   Input ~ 0
+Text HLabel 4050 2850 2    50   Input ~ 0
 M7
-Text GLabel 4050 2950 2    50   Input ~ 0
+Text HLabel 4050 2950 2    50   Input ~ 0
 M8
 $Comp
 L Device:C C39
 U 1 1 5A6015E0
-P 2300 4800
-F 0 "C39" H 2350 4900 50  0000 L CNN
-F 1 "100nF" H 2350 4700 50  0000 L CNN
-F 2 "STD_SMD:C_0603_HandSoldering" H 2338 4650 50  0001 C CNN
-F 3 "" H 2300 4800 50  0001 C CNN
-	1    2300 4800
+P 2400 5150
+F 0 "C39" H 2450 5250 50  0000 L CNN
+F 1 "100nF" H 2450 5050 50  0000 L CNN
+F 2 "STD_SMD:C_0603_HandSoldering" H 2438 5000 50  0001 C CNN
+F 3 "" H 2400 5150 50  0001 C CNN
+	1    2400 5150
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -531,28 +455,100 @@ F 3 "" H 4350 2600 50  0001 C CNN
 	1    4350 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS245 U9
+U 1 1 5E4DE0DF
+P 3400 2750
+F 0 "U9" H 3550 3450 50  0000 C CNN
+F 1 "SN74LVC245APW" H 3900 1950 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3400 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 3400 2750 50  0001 C CNN
+	1    3400 2750
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4350 3050 4350 2750
-Connection ~ 4350 3050
+	3400 1750 3400 1850
 Wire Wire Line
-	4350 2450 4350 2150
-Connection ~ 4350 2150
+	3400 1850 4350 1850
 Wire Wire Line
-	2300 4550 2300 4600
+	4350 1850 4350 2450
+Connection ~ 3400 1850
 Wire Wire Line
-	2300 4600 2900 4600
+	3400 1850 3400 1950
 Wire Wire Line
-	2900 4600 2900 4650
-Connection ~ 2300 4600
+	4350 2750 4350 3150
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E4ED166
+P 2750 3150
+F 0 "#PWR0102" H 2750 3000 50  0001 C CNN
+F 1 "+3V3" V 2765 3278 50  0000 L CNN
+F 2 "" H 2750 3150 50  0001 C CNN
+F 3 "" H 2750 3150 50  0001 C CNN
+	1    2750 3150
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	2300 4600 2300 4650
+	2750 3150 2900 3150
 Wire Wire Line
-	2300 4950 2300 5000
+	3400 3650 2800 3650
 Wire Wire Line
-	2300 5000 2900 5000
+	2800 3650 2800 3250
 Wire Wire Line
-	2900 5000 2900 4950
-Connection ~ 2300 5000
+	2800 3250 2900 3250
 Wire Wire Line
-	2300 5000 2300 5050
+	3400 3550 3400 3650
+Connection ~ 3400 3650
+$Comp
+L Interface_CAN_LIN:TJA1051T U11
+U 1 1 5E4F7A22
+P 3600 5300
+F 0 "U11" H 3700 5700 50  0000 C CNN
+F 1 "TJA1050" H 3850 4900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3600 4800 50  0001 C CIN
+F 3 "" H 3600 5300 50  0001 C CNN
+	1    3600 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3100 5500
+Wire Wire Line
+	2400 5300 2400 5800
+Wire Wire Line
+	2400 4700 2400 4800
+Wire Wire Line
+	3600 4900 3600 4800
+Wire Wire Line
+	3600 4800 2400 4800
+Connection ~ 2400 4800
+Wire Wire Line
+	2400 4800 2400 5000
+Wire Wire Line
+	3600 5700 3600 5800
+Wire Wire Line
+	3600 5800 2400 5800
+Connection ~ 2400 5800
+Wire Wire Line
+	2400 5800 2400 5900
+Wire Wire Line
+	4100 5200 4200 5200
+Wire Wire Line
+	4200 5200 4200 5050
+Wire Wire Line
+	4200 5050 4450 5050
+Wire Wire Line
+	4450 5050 4450 5150
+Wire Wire Line
+	4100 5400 4200 5400
+Wire Wire Line
+	4200 5400 4200 5550
+Wire Wire Line
+	4200 5550 4450 5550
+Wire Wire Line
+	4450 5550 4450 5450
+Wire Wire Line
+	4600 5550 4450 5550
+Connection ~ 4450 5550
+Wire Wire Line
+	4600 5050 4450 5050
+Connection ~ 4450 5050
 $EndSCHEMATC

@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:SimpleFC-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 6 7
 Title "SD Card and EEPROM"
 Date "2018-03-26"
 Rev "1.0"
@@ -91,22 +90,22 @@ Wire Wire Line
 	2700 2600 2550 2600
 Wire Wire Line
 	2700 2700 2550 2700
-Text GLabel 2550 2100 0    50   Input ~ 0
+Text HLabel 2550 2100 0    50   Input ~ 0
 SDIO_D3
-Text GLabel 2550 2200 0    50   Input ~ 0
+Text HLabel 2550 2200 0    50   Input ~ 0
 SDIO_D2
-Text GLabel 2550 2300 0    50   Input ~ 0
+Text HLabel 2550 2300 0    50   Input ~ 0
 SDIO_D1
-Text GLabel 2550 2400 0    50   Input ~ 0
+Text HLabel 2550 2400 0    50   Input ~ 0
 SDIO_D0
-Text GLabel 1800 2500 0    50   Input ~ 0
+Text HLabel 1800 2500 0    50   Input ~ 0
 SD_DECT
-Text GLabel 2550 2600 0    50   Input ~ 0
+Text HLabel 2550 2600 0    50   Input ~ 0
 SDIO_CK
-Text GLabel 2550 2700 0    50   Input ~ 0
+Text HLabel 2550 2700 0    50   Input ~ 0
 SDIO_CMD
 $Comp
-L SimpleFC-cache:AT24CS64-SSHM-Memory_EEPROM U7
+L SimpleFC-rescue:AT24CS64-SSHM-Memory_EEPROM-SimpleFC-cache U7
 U 1 1 5A6C42E2
 P 7650 3700
 F 0 "U7" H 7750 3950 50  0000 C CNN
@@ -191,9 +190,9 @@ Wire Wire Line
 	8050 3600 8200 3600
 Wire Wire Line
 	8050 3750 8200 3750
-Text GLabel 8200 3600 2    50   Input ~ 0
+Text HLabel 8200 3600 2    50   Input ~ 0
 I2C1_SDA
-Text GLabel 8200 3750 2    50   Input ~ 0
+Text HLabel 8200 3750 2    50   Input ~ 0
 I2C1_SCL
 $Comp
 L Device:R R13
@@ -340,11 +339,11 @@ Wire Wire Line
 Wire Wire Line
 	3750 4250 3650 4250
 Connection ~ 3750 4550
-Text GLabel 2800 4550 0    50   Input ~ 0
+Text HLabel 2800 4550 0    50   Input ~ 0
 GPS_LED
-Text GLabel 2800 4850 0    50   Input ~ 0
+Text HLabel 2800 4850 0    50   Input ~ 0
 RDY_LED
-Text GLabel 2800 5150 0    50   Input ~ 0
+Text HLabel 2800 5150 0    50   Input ~ 0
 DBG_LED
 $Comp
 L Device:R R30

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name SimpleFC-cache)(type Legacy)(uri ${KIPRJMOD}/SimpleFC-cache.lib)(options "")(descr ""))
+  (lib (name SimpleFC-rescue)(type Legacy)(uri ${KIPRJMOD}/SimpleFC-rescue.lib)(options "")(descr ""))
 )

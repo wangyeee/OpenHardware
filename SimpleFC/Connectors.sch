@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:SimpleFC-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "IO Connectors"
 Date "2018-03-26"
 Rev "1.0"
@@ -30,21 +29,21 @@ Wire Wire Line
 	2100 3000 1950 3000
 Wire Wire Line
 	2100 3100 1950 3100
-Text GLabel 1950 2400 0    50   Input ~ 0
+Text HLabel 1950 2400 0    50   Input ~ 0
 M1
-Text GLabel 1950 2500 0    50   Input ~ 0
+Text HLabel 1950 2500 0    50   Input ~ 0
 M2
-Text GLabel 1950 2600 0    50   Input ~ 0
+Text HLabel 1950 2600 0    50   Input ~ 0
 M3
-Text GLabel 1950 2700 0    50   Input ~ 0
+Text HLabel 1950 2700 0    50   Input ~ 0
 M4
-Text GLabel 1950 2800 0    50   Input ~ 0
+Text HLabel 1950 2800 0    50   Input ~ 0
 M5
-Text GLabel 1950 2900 0    50   Input ~ 0
+Text HLabel 1950 2900 0    50   Input ~ 0
 M6
-Text GLabel 1950 3000 0    50   Input ~ 0
+Text HLabel 1950 3000 0    50   Input ~ 0
 M7
-Text GLabel 1950 3100 0    50   Input ~ 0
+Text HLabel 1950 3100 0    50   Input ~ 0
 M8
 $Comp
 L power:GND #PWR048
@@ -133,7 +132,7 @@ F 3 "" H 2950 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 1450 2950 1550
-Text GLabel 1950 2300 0    50   Input ~ 0
+Text HLabel 1950 2300 0    50   Input ~ 0
 RC_IN1
 $Comp
 L Jumper:SolderJumper_3_Open JP3
@@ -172,7 +171,7 @@ F 3 "" H 2950 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 2550 2950 2650
-Text GLabel 1950 2200 0    50   Input ~ 0
+Text HLabel 1950 2200 0    50   Input ~ 0
 RC_IN2
 NoConn ~ 3600 3100
 NoConn ~ 3600 3000
@@ -210,9 +209,9 @@ Wire Wire Line
 	7150 2200 6900 2200
 Wire Wire Line
 	7150 2300 6700 2300
-Text GLabel 6400 2200 0    50   Input ~ 0
+Text HLabel 6400 2200 0    50   Input ~ 0
 CANH
-Text GLabel 6400 2300 0    50   Input ~ 0
+Text HLabel 6400 2300 0    50   Input ~ 0
 CANL
 $Comp
 L power:+5V #PWR047
@@ -287,9 +286,9 @@ Wire Wire Line
 	9250 2150 9000 2150
 Wire Wire Line
 	9250 2250 8800 2250
-Text GLabel 8500 2150 0    50   Input ~ 0
+Text HLabel 8500 2150 0    50   Input ~ 0
 U1TX
-Text GLabel 8500 2250 0    50   Input ~ 0
+Text HLabel 8500 2250 0    50   Input ~ 0
 U1RX
 $Comp
 L power:+5V #PWR046
@@ -411,9 +410,9 @@ Wire Wire Line
 	8000 5750 8100 5750
 Wire Wire Line
 	8100 5750 8100 5850
-Text GLabel 8500 5550 2    50   Input ~ 0
+Text HLabel 8500 5550 2    50   Input ~ 0
 SWDIO
-Text GLabel 8500 5650 2    50   Input ~ 0
+Text HLabel 8500 5650 2    50   Input ~ 0
 SWCLK
 $Comp
 L Device:R R24
@@ -442,7 +441,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 5550 8400 5550
 $Comp
-L SimpleFC-cache:USB_B_Micro-Connector_Specialized J12
+L SimpleFC-rescue:USB_B_Micro-Connector_Specialized-SimpleFC-cache J12
 U 1 1 5A661C9E
 P 2100 5200
 F 0 "J12" H 2155 5667 50  0000 C CNN
@@ -499,9 +498,11 @@ $EndComp
 Wire Wire Line
 	2400 5300 2500 5300
 $Comp
-L Power_Protection:PRTR5V0U2X D14
+L SimpleFC-rescue:PRTR5V0U2X-Power_Protection D14
 U 1 1 5A67690A
 P 3550 5850
+AR Path="/5A67690A" Ref="D14"  Part="1" 
+AR Path="/5A638790/5A67690A" Ref="D14"  Part="1" 
 F 0 "D14" H 3650 6200 50  0000 L CNN
 F 1 "PRTR5V0U2X" H 3650 5500 50  0000 L CNN
 F 2 "ESD:SOT143B" H 3610 5850 50  0001 C CNN
@@ -518,9 +519,9 @@ Wire Wire Line
 Wire Wire Line
 	3550 5350 3550 5000
 Connection ~ 3550 5000
-Text GLabel 4300 5200 2    50   Input ~ 0
+Text HLabel 4300 5200 2    50   Input ~ 0
 USBDP
-Text GLabel 4300 5300 2    50   Input ~ 0
+Text HLabel 4300 5300 2    50   Input ~ 0
 USBDM
 $Comp
 L Device:R R27
@@ -633,7 +634,7 @@ Wire Wire Line
 	6800 4400 6950 4400
 Wire Wire Line
 	6950 4300 6800 4300
-Text GLabel 6800 4300 0    50   Input ~ 0
+Text HLabel 6800 4300 0    50   Input ~ 0
 ADC_CURR
 $Comp
 L Connector_Generic:Conn_01x04 J11
@@ -657,9 +658,9 @@ F 3 "" H 9000 4650 50  0001 C CNN
 	1    9000 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8900 4350 0    50   Input ~ 0
+Text HLabel 8900 4350 0    50   Input ~ 0
 ADC_IN2
-Text GLabel 8900 4450 0    50   Input ~ 0
+Text HLabel 8900 4450 0    50   Input ~ 0
 ADC_IN3
 $Comp
 L power:+5V #PWR058
